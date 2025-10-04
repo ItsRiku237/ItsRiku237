@@ -1,16 +1,15 @@
-## Hi there 👋
+👋 Hi, I’m Riku Sahu   
 
-<!--
-**ItsRiku237/ItsRiku237** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 B.Tech CSE Student at GCEK Bhawanipatna  
+💻 Learning: C | Java | Python | Artificial Intelligence | Machine Learning  
+🚀 Goals: To become a Software Developer and work on AI-based projects  
+🎨 Hobbies:  Painting |  Fitness  | Playing Kho-kho and Hand ball
 
-Here are some ideas to get you started:
+🧠 Currently Working On: 
+- Improving my coding & DSA skills  
+- Exploring projects in AI & ML  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📫 Connect With Me:
+- 📧 Email: riku.sahu237@gmail.com
+
+⭐ **Code_Learn_Improve_Repeat.**
