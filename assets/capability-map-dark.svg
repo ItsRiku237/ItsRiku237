@@ -1,0 +1,503 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1520"
+     height="700"
+     viewBox="0 0 1520 700">
+
+  <!-- BACKGROUND -->
+  <rect width="1520" height="700" fill="#08090B"/>
+
+  <!-- TOP / BOTTOM ACCENTS -->
+  <rect x="0" y="0" width="1520" height="3" fill="#063D46"/>
+  <rect x="0" y="697" width="1520" height="3" fill="#063D46"/>
+
+  <!-- HEADER -->
+  <text x="70" y="58"
+        font-family="monospace"
+        font-size="13"
+        font-weight="700"
+        letter-spacing="3"
+        fill="#9A9690">
+    04 — CAPABILITY MAP
+  </text>
+
+  <text x="70" y="110"
+        font-family="Georgia, serif"
+        font-size="43"
+        font-weight="700"
+        fill="#F2EDE4">
+    Tools I can build with
+  </text>
+
+  <text x="70" y="140"
+        font-family="monospace"
+        font-size="11"
+        letter-spacing="1"
+        fill="#77736E">
+    CURRENT STACK  ·  ENGINEERING FOUNDATIONS  ·  MOVING TOWARD AI
+  </text>
+
+  <!-- CENTER SYSTEM LINE -->
+  <line x1="760" y1="178"
+        x2="760" y2="640"
+        stroke="#202328"
+        stroke-width="1"/>
+
+  <!-- ================= FRONTEND ================= -->
+  <rect x="70" y="175"
+        width="335" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="70" y="175"
+        width="4" height="205"
+        rx="2"
+        fill="#E2A13B"/>
+
+  <text x="98" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#E2A13B">
+    ⚛  FRONTEND
+  </text>
+
+  <text x="98" y="249"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    React · Vite · Next.js
+  </text>
+
+  <text x="98" y="279"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    HTML · CSS · JavaScript
+  </text>
+
+  <text x="98" y="304"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    Tailwind · responsive UI
+  </text>
+
+  <line x1="98" y1="327"
+        x2="377" y2="327"
+        stroke="#292D32"/>
+
+  <text x="98" y="353"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    INTERFACE → COMPONENTS → EXPERIENCE
+  </text>
+
+
+  <!-- ================= BACKEND ================= -->
+  <rect x="425" y="175"
+        width="335" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="425" y="175"
+        width="4" height="205"
+        rx="2"
+        fill="#4FA8A0"/>
+
+  <text x="453" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#4FA8A0">
+    ⚙  BACKEND
+  </text>
+
+  <text x="453" y="249"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    Node.js · Express
+  </text>
+
+  <text x="453" y="279"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    REST APIs · middleware
+  </text>
+
+  <text x="453" y="304"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    authentication · errors
+  </text>
+
+  <line x1="453" y1="327"
+        x2="732" y2="327"
+        stroke="#292D32"/>
+
+  <text x="453" y="353"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    ROUTING → LOGIC → AUTH → SERVICES
+  </text>
+
+
+  <!-- ================= DATA ================= -->
+  <rect x="790" y="175"
+        width="335" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="790" y="175"
+        width="4" height="205"
+        rx="2"
+        fill="#8170D9"/>
+
+  <text x="818" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#8170D9">
+    ◈  DATA
+  </text>
+
+  <text x="818" y="249"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    MongoDB · SQL
+  </text>
+
+  <text x="818" y="279"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    Mongoose · schemas
+  </text>
+
+  <text x="818" y="304"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    modeling · persistence
+  </text>
+
+  <line x1="818" y1="327"
+        x2="1097" y2="327"
+        stroke="#292D32"/>
+
+  <text x="818" y="353"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    MODEL → STORE → QUERY → PERSIST
+  </text>
+
+
+  <!-- ================= SYSTEMS ================= -->
+  <rect x="1150" y="175"
+        width="300" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="1150" y="175"
+        width="4" height="205"
+        rx="2"
+        fill="#E2A13B"/>
+
+  <text x="1178" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#E2A13B">
+    🔐  SYSTEMS
+  </text>
+
+  <text x="1178" y="249"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    Auth · Realtime
+  </text>
+
+  <text x="1178" y="279"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    JWT · Socket.io
+  </text>
+
+  <text x="1178" y="304"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    validation · APIs
+  </text>
+
+  <line x1="1178" y1="327"
+        x2="1422" y2="327"
+        stroke="#292D32"/>
+
+  <text x="1178" y="353"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    SECURE → CONNECT → SERVE
+  </text>
+
+
+  <!-- ================= LANGUAGES ================= -->
+  <rect x="70" y="405"
+        width="335" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="70" y="405"
+        width="4" height="205"
+        rx="2"
+        fill="#4FA8A0"/>
+
+  <text x="98" y="437"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#4FA8A0">
+    ◉  LANGUAGES
+  </text>
+
+  <text x="98" y="479"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    C · Java · Python
+  </text>
+
+  <text x="98" y="509"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    problem solving
+  </text>
+
+  <text x="98" y="534"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    programming foundations
+  </text>
+
+  <line x1="98" y1="557"
+        x2="377" y2="557"
+        stroke="#292D32"/>
+
+  <text x="98" y="583"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    LOGIC → STRUCTURES → SOLUTIONS
+  </text>
+
+
+  <!-- ================= AI / DATA ================= -->
+  <rect x="425" y="405"
+        width="335" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="425" y="405"
+        width="4" height="205"
+        rx="2"
+        fill="#8170D9"/>
+
+  <text x="453" y="437"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#8170D9">
+    🧠  AI / DATA
+  </text>
+
+  <text x="453" y="479"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    NumPy · Pandas
+  </text>
+
+  <text x="453" y="509"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    data analysis foundations
+  </text>
+
+  <text x="453" y="534"
+        font-family="monospace"
+        font-size="11"
+        fill="#A5A09A">
+    AI / ML — currently learning
+  </text>
+
+  <!-- LEARNING INDICATOR -->
+  <circle cx="453" cy="577"
+          r="5"
+          fill="#8170D9"/>
+
+  <text x="466" y="581"
+        font-family="monospace"
+        font-size="10"
+        fill="#8170D9">
+    IN PROGRESS
+  </text>
+
+  <line x1="555" y1="577"
+        x2="732" y2="577"
+        stroke="#292D32"/>
+
+
+  <!-- ================= TOOLS ================= -->
+  <rect x="790" y="405"
+        width="335" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="790" y="405"
+        width="4" height="205"
+        rx="2"
+        fill="#E2A13B"/>
+
+  <text x="818" y="437"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#E2A13B">
+    🛠  TOOLS
+  </text>
+
+  <text x="818" y="479"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    Git · GitHub · Postman
+  </text>
+
+  <text x="818" y="509"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    VS Code · Jupyter · Colab
+  </text>
+
+  <text x="818" y="534"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    Dev-C++ · development workflow
+  </text>
+
+  <line x1="818" y1="557"
+        x2="1097" y2="557"
+        stroke="#292D32"/>
+
+  <text x="818" y="583"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    CODE → TEST → DEBUG → SHIP
+  </text>
+
+
+  <!-- ================= DEPLOYMENT ================= -->
+  <rect x="1150" y="405"
+        width="300" height="205"
+        rx="7"
+        fill="#101216"
+        stroke="#30343A"
+        stroke-width="1.3"/>
+
+  <rect x="1150" y="405"
+        width="4" height="205"
+        rx="2"
+        fill="#4FA8A0"/>
+
+  <text x="1178" y="437"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#4FA8A0">
+    🚀  SHIP
+  </text>
+
+  <text x="1178" y="479"
+        font-family="Arial, sans-serif"
+        font-size="21"
+        font-weight="700"
+        fill="#F2EDE4">
+    Vercel · Netlify
+  </text>
+
+  <text x="1178" y="509"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    Render · deployment
+  </text>
+
+  <text x="1178" y="534"
+        font-family="monospace"
+        font-size="11"
+        fill="#77736E">
+    production workflows
+  </text>
+
+  <line x1="1178" y1="557"
+        x2="1422" y2="557"
+        stroke="#292D32"/>
+
+  <text x="1178" y="583"
+        font-family="monospace"
+        font-size="10"
+        fill="#58C9C0">
+    BUILD → DEPLOY → ITERATE
+  </text>
+
+
+  <!-- SMALL CONNECTOR NODES -->
+  <circle cx="760" cy="178" r="3" fill="#4FA8A0"/>
+  <circle cx="760" cy="405" r="3" fill="#8170D9"/>
+  <circle cx="760" cy="610" r="3" fill="#E2A13B"/>
+
+</svg>

@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="300"
+     viewBox="0 0 1200 300"
+     role="img"
+     aria-label="GitHub contribution activity graph">
+
+<defs>
+
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <linearGradient id="graphLine"
+                  x1="0" y1="0"
+                  x2="1" y2="0">
+    <stop offset="0" stop-color="#70c9bd"/>
+    <stop offset=".5" stop-color="#e7b45a"/>
+    <stop offset="1" stop-color="#70c9bd"/>
+  </linearGradient>
+
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1200" height="300"
+      fill="#0b0d0f"/>
+
+<!-- HEADER -->
+<text x="55" y="35"
+      fill="#8f8c85"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="3">
+  08 — CONTRIBUTION HISTORY
+</text>
+
+<text x="1145" y="35"
+      text-anchor="end"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="10">
+  LAST 30 DAYS
+</text>
+
+<line x1="55" y1="52"
+      x2="1145" y2="52"
+      stroke="#24282b"/>
+
+<!-- TITLE -->
+<text x="55" y="82"
+      fill="#f1ede4"
+      font-family="Georgia, serif"
+      font-size="25"
+      font-weight="700">
+  Contribution activity
+</text>
+
+<text x="1145" y="82"
+      text-anchor="end"
+      fill="#70c9bd"
+      font-family="monospace"
+      font-size="10">
+  LIVE GITHUB SIGNAL
+</text>
+
+<!-- GRAPH AREA -->
+<g transform="translate(75 105)">
+
+  <!-- horizontal grid -->
+  <line x1="0" y1="0"
+        x2="1050" y2="0"
+        stroke="#30353a"
+        stroke-dasharray="3 4"/>
+
+  <line x1="0" y1="70"
+        x2="1050" y2="70"
+        stroke="#30353a"
+        stroke-dasharray="3 4"/>
+
+  <line x1="0" y1="140"
+        x2="1050" y2="140"
+        stroke="#30353a"
+        stroke-dasharray="3 4"/>
+
+  <!-- Y labels -->
+  <text x="-18" y="5"
+        text-anchor="end"
+        fill="#77746e"
+        font-family="monospace"
+        font-size="9">
+    2
+  </text>
+
+  <text x="-18" y="75"
+        text-anchor="end"
+        fill="#77746e"
+        font-family="monospace"
+        font-size="9">
+    1
+  </text>
+
+  <text x="-18" y="145"
+        text-anchor="end"
+        fill="#77746e"
+        font-family="monospace"
+        font-size="9">
+    0
+  </text>
+
+  <!-- VERTICAL GRID -->
+  <g stroke="#22272a"
+     stroke-dasharray="2 5">
+
+    <line x1="0" y1="0" x2="0" y2="140"/>
+    <line x1="37" y1="0" x2="37" y2="140"/>
+    <line x1="74" y1="0" x2="74" y2="140"/>
+    <line x1="111" y1="0" x2="111" y2="140"/>
+    <line x1="148" y1="0" x2="148" y2="140"/>
+    <line x1="185" y1="0" x2="185" y2="140"/>
+    <line x1="222" y1="0" x2="222" y2="140"/>
+    <line x1="259" y1="0" x2="259" y2="140"/>
+    <line x1="296" y1="0" x2="296" y2="140"/>
+    <line x1="333" y1="0" x2="333" y2="140"/>
+    <line x1="370" y1="0" x2="370" y2="140"/>
+    <line x1="407" y1="0" x2="407" y2="140"/>
+    <line x1="444" y1="0" x2="444" y2="140"/>
+    <line x1="481" y1="0" x2="481" y2="140"/>
+    <line x1="518" y1="0" x2="518" y2="140"/>
+    <line x1="555" y1="0" x2="555" y2="140"/>
+    <line x1="592" y1="0" x2="592" y2="140"/>
+    <line x1="629" y1="0" x2="629" y2="140"/>
+    <line x1="666" y1="0" x2="666" y2="140"/>
+    <line x1="703" y1="0" x2="703" y2="140"/>
+    <line x1="740" y1="0" x2="740" y2="140"/>
+    <line x1="777" y1="0" x2="777" y2="140"/>
+    <line x1="814" y1="0" x2="814" y2="140"/>
+    <line x1="851" y1="0" x2="851" y2="140"/>
+    <line x1="888" y1="0" x2="888" y2="140"/>
+    <line x1="925" y1="0" x2="925" y2="140"/>
+    <line x1="962" y1="0" x2="962" y2="140"/>
+    <line x1="999" y1="0" x2="999" y2="140"/>
+    <line x1="1036" y1="0" x2="1036" y2="140"/>
+
+  </g>
+
+  <!-- GRAPH LINE -->
+  <polyline
+    points="
+    0,70
+    37,70
+    74,70
+    111,70
+    148,70
+    185,140
+    222,140
+    259,70
+    296,70
+    333,70
+    370,70
+    407,70
+    444,70
+    481,70
+    518,70
+    555,140
+    592,140
+    629,70
+    666,70
+    703,70
+    740,70
+    777,70
+    814,70
+    851,140
+    888,70
+    925,70
+    962,140
+    999,0
+    1036,70
+    1073,140
+    1110,70"
+    fill="none"
+    stroke="url(#graphLine)"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"
+    transform="translate(0 0)"
+  />
+
+  <!-- DATA POINTS -->
+  <g fill="#70c9bd">
+
+    <circle cx="0" cy="70" r="4"/>
+    <circle cx="37" cy="70" r="4"/>
+    <circle cx="74" cy="70" r="4"/>
+    <circle cx="111" cy="70" r="4"/>
+    <circle cx="148" cy="70" r="4"/>
+
+    <circle cx="185" cy="140" r="4"/>
+    <circle cx="222" cy="140" r="4"/>
+
+    <circle cx="259" cy="70" r="4"/>
+    <circle cx="296" cy="70" r="4"/>
+    <circle cx="333" cy="70" r="4"/>
+    <circle cx="370" cy="70" r="4"/>
+    <circle cx="407" cy="70" r="4"/>
+    <circle cx="444" cy="70" r="4"/>
+    <circle cx="481" cy="70" r="4"/>
+    <circle cx="518" cy="70" r="4"/>
+
+    <circle cx="555" cy="140" r="4"/>
+    <circle cx="592" cy="140" r="4"/>
+
+    <circle cx="629" cy="70" r="4"/>
+    <circle cx="666" cy="70" r="4"/>
+    <circle cx="703" cy="70" r="4"/>
+    <circle cx="740" cy="70" r="4"/>
+    <circle cx="777" cy="70" r="4"/>
+    <circle cx="814" cy="70" r="4"/>
+
+    <circle cx="851" cy="140" r="4"/>
+
+    <circle cx="888" cy="70" r="4"/>
+    <circle cx="925" cy="70" r="4"/>
+
+    <circle cx="962" cy="140" r="4"/>
+
+    <circle cx="999" cy="0"
+            r="5"
+            fill="#e7b45a"
+            filter="url(#glow)"/>
+
+    <circle cx="1036" cy="70" r="4"/>
+    <circle cx="1073" cy="140" r="4"/>
+    <circle cx="1110" cy="70" r="4"/>
+
+  </g>
+
+  <!-- DATES -->
+  <g fill="#8f8c85"
+     font-family="monospace"
+     font-size="9"
+     text-anchor="middle">
+
+    <text x="0" y="163">22</text>
+    <text x="37" y="163">23</text>
+    <text x="74" y="163">24</text>
+    <text x="111" y="163">25</text>
+    <text x="148" y="163">26</text>
+    <text x="185" y="163">27</text>
+    <text x="222" y="163">28</text>
+    <text x="259" y="163">29</text>
+    <text x="296" y="163">30</text>
+    <text x="333" y="163">31</text>
+
+    <text x="370" y="163">1</text>
+    <text x="407" y="163">2</text>
+    <text x="444" y="163">3</text>
+    <text x="481" y="163">4</text>
+    <text x="518" y="163">5</text>
+    <text x="555" y="163">6</text>
+    <text x="592" y="163">7</text>
+    <text x="629" y="163">8</text>
+    <text x="666" y="163">9</text>
+    <text x="703" y="163">10</text>
+    <text x="740" y="163">11</text>
+    <text x="777" y="163">12</text>
+    <text x="814" y="163">13</text>
+    <text x="851" y="163">14</text>
+    <text x="888" y="163">15</text>
+    <text x="925" y="163">16</text>
+    <text x="962" y="163">17</text>
+    <text x="999" y="163">18</text>
+    <text x="1036" y="163">19</text>
+    <text x="1073" y="163">20</text>
+    <text x="1110" y="163">21</text>
+
+  </g>
+
+</g>
+
+<!-- FOOTER -->
+<circle cx="60" cy="284"
+        r="4"
+        fill="#70c9bd"
+        filter="url(#glow)"/>
+
+<text x="73" y="288"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9"
+      letter-spacing="1">
+  DAILY CONTRIBUTION TRACE
+</text>
+
+<text x="1140" y="288"
+      text-anchor="end"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9">
+  PEAK → 2 CONTRIBUTIONS
+</text>
+
+</svg>

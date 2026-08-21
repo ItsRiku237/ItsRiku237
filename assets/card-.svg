@@ -1,0 +1,42 @@
+## 03 — Shipped Systems
+
+<sub>04 builds · real code · live deployments · proof of work</sub>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-chat-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-chat-light.svg"><img src="assets/card-chat-dark.svg" alt="Chat Application — flagship"></picture>
+
+[![View Repo](https://img.shields.io/badge/-View_Repo-14141a?style=for-the-badge&logo=github&logoColor=f2ede4)](https://github.com/ItsRiku237/Syntecxhub_Chat_application)
+[![Live Demo](https://img.shields.io/badge/-Live_Demo-d99a3f?style=for-the-badge&logo=vercel&logoColor=0d0d10)](https://syntecxhubchatweb.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-taskmanager-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-taskmanager-light.svg"><img src="assets/card-taskmanager-dark.svg" alt="Task Manager"></picture>
+
+[![View Repo](https://img.shields.io/badge/-View_Repo-14141a?style=for-the-badge&logo=github&logoColor=f2ede4)](https://github.com/ItsRiku237/Syntecxhub_task_manager_app)
+[![Live Demo](https://img.shields.io/badge/-Live_Demo-d99a3f?style=for-the-badge&logo=vercel&logoColor=0d0d10)](https://syntecxhubtaskmanagerapp.vercel.app)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-usermgmt-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-usermgmt-light.svg"><img src="assets/card-usermgmt-dark.svg" alt="User Management API"></picture>
+
+[![View Repo](https://img.shields.io/badge/-View_Repo-14141a?style=for-the-badge&logo=github&logoColor=f2ede4)](https://github.com/ItsRiku237/Syntecxhub_User_Management_System)
+[![Live Demo](https://img.shields.io/badge/-Live_Demo-4fa8a0?style=for-the-badge&logo=render&logoColor=0d0d10)](https://syntecxhub-user-management-system-3hdq.onrender.com)
+
+</td>
+<td width="50%" valign="top">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-notes-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/card-notes-light.svg"><img src="assets/card-notes-dark.svg" alt="Notes App"></picture>
+
+[![View Repo](https://img.shields.io/badge/-View_Repo-14141a?style=for-the-badge&logo=github&logoColor=f2ede4)](https://github.com/ItsRiku237/Syntecxhub_Notes_App)
+[![Live Demo](https://img.shields.io/badge/-Live_Demo-4fa8a0?style=for-the-badge&logo=netlify&logoColor=0d0d10)](https://syntecxhub-notes-app.netlify.app)
+
+</td>
+</tr>
+</table>

@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="330"
+     viewBox="0 0 1200 330">
+
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<!-- LIGHT BACKGROUND -->
+<rect width="1200" height="330" fill="#f7f5f0"/>
+
+<!-- HEADER -->
+<text x="55" y="42"
+      fill="#77736d"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="3">
+  07 — GITHUB TELEMETRY
+</text>
+
+<text x="55" y="80"
+      fill="#202124"
+      font-family="Georgia, serif"
+      font-size="32">
+  Activity, not decoration.
+</text>
+
+<text x="55" y="108"
+      fill="#77736d"
+      font-family="monospace"
+      font-size="10">
+  LIVE SOURCE → GITHUB CONTRIBUTION HISTORY
+</text>
+
+
+<!-- BOXES -->
+
+<rect x="55" y="145"
+      width="315"
+      height="135"
+      rx="5"
+      fill="#ffffff"
+      stroke="#d7d4ce"/>
+
+<rect x="390" y="145"
+      width="420"
+      height="135"
+      rx="5"
+      fill="#ffffff"
+      stroke="#d7d4ce"/>
+
+<rect x="830" y="145"
+      width="315"
+      height="135"
+      rx="5"
+      fill="#ffffff"
+      stroke="#d7d4ce"/>
+
+
+<!-- CONTRIBUTIONS -->
+
+<text x="80" y="174"
+      fill="#318b83"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="1">
+  CONTRIBUTIONS
+</text>
+
+<text x="80" y="218"
+      fill="#202124"
+      font-family="Arial, sans-serif"
+      font-size="34"
+      font-weight="700">
+  778
+</text>
+
+<text x="80" y="244"
+      fill="#5f5b55"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Total Contributions
+</text>
+
+<text x="80" y="264"
+      fill="#88837c"
+      font-family="monospace"
+      font-size="9">
+  OCT 04 2025 → PRESENT
+</text>
+
+
+<!-- CURRENT STREAK -->
+
+<circle cx="600"
+        cy="207"
+        r="48"
+        fill="none"
+        stroke="#ddd9d1"
+        stroke-width="8"/>
+
+<circle cx="600"
+        cy="207"
+        r="48"
+        fill="none"
+        stroke="#d99a32"
+        stroke-width="8"
+        stroke-linecap="round"
+        filter="url(#glow)"/>
+
+<text x="600"
+      y="172"
+      text-anchor="middle"
+      font-size="24">
+  🔥
+</text>
+
+<text x="600"
+      y="218"
+      text-anchor="middle"
+      fill="#202124"
+      font-family="Arial, sans-serif"
+      font-size="30"
+      font-weight="700">
+  1
+</text>
+
+<text x="600"
+      y="252"
+      text-anchor="middle"
+      fill="#318b83"
+      font-family="Arial, sans-serif"
+      font-size="17"
+      font-weight="700">
+  Current Streak
+</text>
+
+<text x="600"
+      y="271"
+      text-anchor="middle"
+      fill="#77736d"
+      font-family="monospace"
+      font-size="9">
+  AUG 21
+</text>
+
+
+<!-- LONGEST -->
+
+<text x="855" y="174"
+      fill="#b27b1d"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="1">
+  BEST RUN
+</text>
+
+<text x="855" y="218"
+      fill="#202124"
+      font-family="Arial, sans-serif"
+      font-size="34"
+      font-weight="700">
+  77
+</text>
+
+<text x="855" y="244"
+      fill="#5f5b55"
+      font-family="Arial, sans-serif"
+      font-size="14">
+  Longest Streak
+</text>
+
+<text x="855" y="264"
+      fill="#88837c"
+      font-family="monospace"
+      font-size="9">
+  FEB 15 → MAY 02
+</text>
+
+</svg>

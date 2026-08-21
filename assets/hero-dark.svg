@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Riku engineering portfolio visualization">
+<defs>
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e7b45a"/>
+    <stop offset="0.52" stop-color="#70c9bd"/>
+    <stop offset="1" stop-color="#8f8be8"/>
+  </linearGradient>
+  <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#e7b45a" stop-opacity=".0"/>
+    <stop offset=".5" stop-color="#70c9bd" stop-opacity=".7"/>
+    <stop offset="1" stop-color="#8f8be8" stop-opacity=".0"/>
+  </linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect width="1200" height="420" fill="#0b0d0f"/>
+<g opacity=".16" stroke="#c7c3b8" stroke-width="1">
+  <path d="M40 80H1160M40 140H1160M40 200H1160M40 260H1160M40 320H1160"/>
+  <path d="M160 30V390M280 30V390M400 30V390M520 30V390M640 30V390M760 30V390M880 30V390M1000 30V390"/>
+</g>
+<g fill="#9b9991" font-family="monospace" font-size="11" letter-spacing="2">
+  <text x="58" y="42">RIKU / ENGINEERING IDENTITY</text>
+  <text x="1040" y="42">01—07</text>
+  <text x="58" y="384">B.TECH CSE · 2028</text>
+  <text x="930" y="384">OPEN TO OPPORTUNITIES</text>
+</g>
+<path d="M58 70H1142" stroke="#30343a"/>
+<text x="58" y="170" fill="#f3efe6" font-family="Georgia, serif" font-size="92" letter-spacing="-4">Riku</text>
+<text x="62" y="212" fill="#a9a59d" font-family="monospace" font-size="15" letter-spacing="4">FULL-STACK MERN  →  AI / ML</text>
+<text x="62" y="250" fill="#d9d4c9" font-family="Arial, sans-serif" font-size="18">Building web systems with a bias toward structure, realtime behavior and useful detail.</text>
+<g transform="translate(790 105)">
+  <circle cx="105" cy="105" r="92" fill="none" stroke="#2f3439"/>
+  <circle cx="105" cy="105" r="67" fill="none" stroke="#454a50"/>
+  <path d="M105 13A92 92 0 0 1 190 106" fill="none" stroke="url(#grad)" stroke-width="3"/>
+  <path d="M105 38A67 67 0 0 1 168 82" fill="none" stroke="#70c9bd" stroke-width="2"/>
+  <circle cx="105" cy="105" r="5" fill="#e7b45a" filter="url(#glow)"/>
+  <path d="M105 105L184 57" stroke="#e7b45a" stroke-width="1.5"/>
+  <path d="M105 105L66 177" stroke="#70c9bd" stroke-width="1.5"/>
+  <text x="199" y="54" fill="#9b9991" font-family="monospace" font-size="9">PROVEN</text>
+  <text x="45" y="191" fill="#9b9991" font-family="monospace" font-size="9">EXPLORING</text>
+</g>
+<rect x="58" y="286" width="280" height="44" rx="2" fill="#121519" stroke="#34383d"/>
+<circle cx="80" cy="308" r="4" fill="#70c9bd"/>
+<text x="94" y="313" fill="#e8e3d9" font-family="monospace" font-size="12">SYSTEMS · UI · APIs · DATA</text>
+
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 920 380" width="920" height="380" xmlns="http://www.w3.org/2000/svg" role="img">
+<rect x="0" y="0" width="920" height="380" fill="#f5f2ec" />
+<rect x="44" y="44" width="832" height="292" fill="none" stroke="#ddd7c9" stroke-width="1.4" />
+<path d="M 44 58 L 44 44 L 58 44" fill="none" stroke="#ddd7c9" stroke-width="2" stroke-linecap="square" />
+<path d="M 876 58 L 876 44 L 862 44" fill="none" stroke="#ddd7c9" stroke-width="2" stroke-linecap="square" />
+<path d="M 44 322 L 44 336 L 58 336" fill="none" stroke="#ddd7c9" stroke-width="2" stroke-linecap="square" />
+<path d="M 876 322 L 876 336 L 862 336" fill="none" stroke="#ddd7c9" stroke-width="2" stroke-linecap="square" />
+<text x="72" y="84" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" letter-spacing="3" fill="#726d64">03 — ENGINEER SNAPSHOT</text>
+<text x="72" y="122" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">NAME</text>
+<text x="274" y="122" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#1b1a17">RIKU</text>
+<text x="72" y="154.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">ROLE</text>
+<text x="274" y="154.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#a8661f">FULL-STACK MERN DEVELOPER</text>
+<text x="72" y="186.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">DEGREE</text>
+<text x="274" y="186.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#1b1a17">B.TECH CSE — CLASS OF 2028</text>
+<text x="72" y="218.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">CORE STACK</text>
+<text x="274" y="218.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#1b1a17">REACT · NODE · EXPRESS · MONGODB</text>
+<text x="72" y="250.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">EXPERIENCE</text>
+<text x="274" y="250.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#1b1a17">SYNTECXHUB (WEB DEV) · GROW GRID (AI/ML)</text>
+<text x="72" y="282.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">LEARNING</text>
+<text x="274" y="282.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#2f7d76">AI / ML FOUNDATIONS</text>
+<text x="72" y="314.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="12" letter-spacing="1.2" fill="#726d64">STATUS</text>
+<text x="274" y="314.0" font-family="'JetBrains Mono','SFMono-Regular','Consolas','Liberation Mono',monospace" font-size="13" fill="#1b1a17">OPEN TO INTERNSHIPS / ENTRY-LEVEL ROLES</text></svg>

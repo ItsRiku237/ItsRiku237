@@ -1,0 +1,352 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="650"
+     viewBox="0 0 1600 650">
+
+  <!-- LIGHT PAGE BACKGROUND -->
+  <rect width="1600" height="650" fill="#F7F5F0"/>
+
+  <!-- TOP / BOTTOM ACCENT -->
+  <rect x="0" y="0" width="1600" height="4" fill="#0F5555"/>
+  <rect x="0" y="646" width="1600" height="4" fill="#0F5555"/>
+
+  <!-- SECTION LABEL -->
+  <text x="70" y="58"
+        font-family="monospace"
+        font-size="14"
+        font-weight="700"
+        letter-spacing="3"
+        fill="#77736C">
+    04 — CAPABILITY MAP
+  </text>
+
+  <!-- TITLE -->
+  <text x="70" y="112"
+        font-family="Georgia, serif"
+        font-size="46"
+        font-weight="700"
+        fill="#17181A">
+    Tools I can build with
+  </text>
+
+  <!-- ========================= -->
+  <!-- FRONTEND -->
+  <!-- ========================= -->
+
+  <rect x="70" y="170"
+        width="336"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M70 195V170H95"
+        fill="none"
+        stroke="#D99A3F"
+        stroke-width="2"/>
+
+  <text x="102" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#B47716">
+    🖥 FRONTEND
+  </text>
+
+  <text x="102" y="250"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    React · Vite · Next.js
+  </text>
+
+  <text x="102" y="280"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    HTML · CSS · JavaScript · Tailwind
+  </text>
+
+  <!-- ========================= -->
+  <!-- BACKEND -->
+  <!-- ========================= -->
+
+  <rect x="432" y="170"
+        width="336"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M432 195V170H457"
+        fill="none"
+        stroke="#4FA8A0"
+        stroke-width="2"/>
+
+  <text x="464" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#287F79">
+    ⚙ BACKEND
+  </text>
+
+  <text x="464" y="250"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    Node.js · Express
+  </text>
+
+  <text x="464" y="280"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    REST · middleware · errors
+  </text>
+
+  <!-- ========================= -->
+  <!-- DATA -->
+  <!-- ========================= -->
+
+  <rect x="794" y="170"
+        width="336"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M794 195V170H819"
+        fill="none"
+        stroke="#7167B8"
+        stroke-width="2"/>
+
+  <text x="826" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#6257A8">
+    🗄 DATA
+  </text>
+
+  <text x="826" y="250"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    MongoDB · SQL · Mongoose
+  </text>
+
+  <text x="826" y="280"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    modeling · persistence
+  </text>
+
+  <!-- ========================= -->
+  <!-- SYSTEMS -->
+  <!-- ========================= -->
+
+  <rect x="1156" y="170"
+        width="376"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M1156 195V170H1181"
+        fill="none"
+        stroke="#D99A3F"
+        stroke-width="2"/>
+
+  <text x="1188" y="207"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#B47716">
+    🔐 SYSTEMS
+  </text>
+
+  <text x="1188" y="250"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    Auth · Realtime · APIs
+  </text>
+
+  <text x="1188" y="280"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    JWT · Socket.io · validation
+  </text>
+
+  <!-- ========================= -->
+  <!-- LANGUAGES -->
+  <!-- ========================= -->
+
+  <rect x="70" y="372"
+        width="336"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M70 397V372H95"
+        fill="none"
+        stroke="#4FA8A0"
+        stroke-width="2"/>
+
+  <text x="102" y="409"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#287F79">
+    💻 LANGUAGES
+  </text>
+
+  <text x="102" y="452"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    C · Java · Python
+  </text>
+
+  <text x="102" y="482"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    problem solving · foundations
+  </text>
+
+  <!-- ========================= -->
+  <!-- AI / DATA -->
+  <!-- ========================= -->
+
+  <rect x="432" y="372"
+        width="336"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M432 397V372H457"
+        fill="none"
+        stroke="#7167B8"
+        stroke-width="2"/>
+
+  <text x="464" y="409"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#6257A8">
+    🤖 AI / DATA
+  </text>
+
+  <text x="464" y="452"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    NumPy · Pandas
+  </text>
+
+  <text x="464" y="482"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    AI / ML · currently learning
+  </text>
+
+  <!-- ========================= -->
+  <!-- TOOLS -->
+  <!-- ========================= -->
+
+  <rect x="794" y="372"
+        width="336"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M794 397V372H819"
+        fill="none"
+        stroke="#D99A3F"
+        stroke-width="2"/>
+
+  <text x="826" y="409"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#B47716">
+    🛠 TOOLS
+  </text>
+
+  <text x="826" y="452"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    Git · GitHub · Postman
+  </text>
+
+  <text x="826" y="482"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    VS Code · Jupyter · Colab · Dev-C++
+  </text>
+
+  <!-- ========================= -->
+  <!-- SHIP -->
+  <!-- ========================= -->
+
+  <rect x="1156" y="372"
+        width="376"
+        height="168"
+        rx="5"
+        fill="#FFFFFF"
+        stroke="#D5D3CD"
+        stroke-width="1.5"/>
+
+  <path d="M1156 397V372H1181"
+        fill="none"
+        stroke="#4FA8A0"
+        stroke-width="2"/>
+
+  <text x="1188" y="409"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        fill="#287F79">
+    🚀 SHIP
+  </text>
+
+  <text x="1188" y="452"
+        font-family="monospace"
+        font-size="16"
+        font-weight="700"
+        fill="#252629">
+    Vercel · Netlify · Render
+  </text>
+
+  <text x="1188" y="482"
+        font-family="monospace"
+        font-size="12"
+        fill="#77736C">
+    deployment · production loops
+  </text>
+
+</svg>

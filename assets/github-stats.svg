@@ -1,0 +1,471 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="300"
+     viewBox="0 0 1200 300"
+     role="img"
+     aria-label="GitHub contribution statistics">
+
+<defs>
+
+  <linearGradient id="accent"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1">
+    <stop offset="0" stop-color="#e7b45a"/>
+    <stop offset=".5" stop-color="#70c9bd"/>
+    <stop offset="1" stop-color="#8f8be8"/>
+  </linearGradient>
+
+  <filter id="glow"
+          x="-50%"
+          y="-50%"
+          width="200%"
+          height="200%">
+    <feGaussianBlur stdDeviation="2.5"
+                    result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+</defs>
+
+
+<!-- ================================================== -->
+<!-- PAGE -->
+<!-- ================================================== -->
+
+<rect x="0"
+      y="0"
+      width="1200"
+      height="300"
+      fill="#0b0d0f"/>
+
+
+<!-- ================================================== -->
+<!-- HEADER -->
+<!-- ================================================== -->
+
+<text x="55"
+      y="40"
+      fill="#8f8c85"
+      font-family="monospace"
+      font-size="11"
+      letter-spacing="3">
+  07 — GITHUB TELEMETRY
+</text>
+
+<text x="1145"
+      y="40"
+      text-anchor="end"
+      fill="#70c9bd"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="1">
+  LIVE ACTIVITY
+</text>
+
+
+<line x1="55"
+      y1="55"
+      x2="1145"
+      y2="55"
+      stroke="#24282b"/>
+
+
+<text x="55"
+      y="84"
+      fill="#f1ede4"
+      font-family="Georgia, serif"
+      font-size="32"
+      font-weight="700">
+  Activity, not decoration.
+</text>
+
+
+<text x="55"
+      y="108"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="10">
+  CONTRIBUTION SIGNAL → CONSISTENCY → SHIPPED SYSTEMS
+</text>
+
+
+<!-- ================================================== -->
+<!-- THREE ORIGINAL-STYLE BOXES -->
+<!-- ================================================== -->
+
+<g transform="translate(55 130)">
+
+
+<!-- ================================================== -->
+<!-- BOX 1 — TOTAL CONTRIBUTIONS -->
+<!-- ================================================== -->
+
+<rect x="0"
+      y="0"
+      width="330"
+      height="110"
+      rx="4"
+      fill="#111417"
+      stroke="#30353a"/>
+
+<!-- top accent -->
+
+<line x1="0"
+      y1="0"
+      x2="58"
+      y2="0"
+      stroke="#70c9bd"
+      stroke-width="2"/>
+
+
+<text x="24"
+      y="27"
+      fill="#70c9bd"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="2">
+  CONTRIBUTIONS
+</text>
+
+
+<!-- GitHub-style contribution icon -->
+
+<g transform="translate(25 47)">
+
+  <circle cx="14"
+          cy="14"
+          r="13"
+          fill="#101e1e"
+          stroke="#277a73"/>
+
+  <path d="M8 14
+           L12 18
+           L20 9"
+        fill="none"
+        stroke="#58c9c0"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+</g>
+
+
+<!-- NUMBER -->
+
+<text x="62"
+      y="68"
+      fill="#f1ede4"
+      font-family="Arial, sans-serif"
+      font-size="36"
+      font-weight="700">
+  {{TOTAL_CONTRIBUTIONS}}
+</text>
+
+
+<text x="185"
+      y="67"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="10">
+  TOTAL
+</text>
+
+
+<text x="25"
+      y="94"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9">
+  {{TOTAL_FROM}} → {{TODAY}}
+</text>
+
+
+<!-- ================================================== -->
+<!-- BOX 2 — CURRENT STREAK -->
+<!-- ================================================== -->
+
+<rect x="350"
+      y="0"
+      width="330"
+      height="110"
+      rx="4"
+      fill="#111417"
+      stroke="#30353a"/>
+
+
+<line x1="350"
+      y1="0"
+      x2="408"
+      y2="0"
+      stroke="#e7b45a"
+      stroke-width="2"/>
+
+
+<text x="374"
+      y="27"
+      fill="#e7b45a"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="2">
+  CURRENT STREAK
+</text>
+
+
+<!-- ================================================== -->
+<!-- FLAME ICON -->
+<!-- ================================================== -->
+
+<g transform="translate(374 45)">
+
+  <!-- glow -->
+
+  <path d="
+    M18 2
+    C11 10 6 15 6 24
+    C6 34 13 41 22 41
+    C31 41 38 34 38 24
+    C38 16 33 10 27 5
+    C28 13 24 17 20 19
+    C21 12 20 7 18 2 Z"
+    fill="#e7b45a"
+    opacity=".20"
+    filter="url(#glow)"/>
+
+  <!-- flame -->
+
+  <path d="
+    M18 2
+    C11 10 6 15 6 24
+    C6 34 13 41 22 41
+    C31 41 38 34 38 24
+    C38 16 33 10 27 5
+    C28 13 24 17 20 19
+    C21 12 20 7 18 2 Z"
+    fill="#e7b45a"/>
+
+  <!-- inner flame -->
+
+  <path d="
+    M22 18
+    C18 23 16 26 16 30
+    C16 34 19 36 22 36
+    C26 36 29 33 29 29
+    C29 25 26 22 22 18 Z"
+    fill="#0b0d0f"/>
+
+</g>
+
+
+<!-- STREAK RING -->
+
+<g transform="translate(485 69)">
+
+  <circle cx="0"
+          cy="0"
+          r="28"
+          fill="none"
+          stroke="#292d30"
+          stroke-width="6"/>
+
+  <circle cx="0"
+          cy="0"
+          r="28"
+          fill="none"
+          stroke="url(#accent)"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-dasharray="160 16"
+          transform="rotate(-90)"
+          filter="url(#glow)"/>
+
+  <text x="0"
+        y="9"
+        text-anchor="middle"
+        fill="#f1ede4"
+        font-family="Arial, sans-serif"
+        font-size="24"
+        font-weight="700">
+    {{CURRENT_STREAK}}
+  </text>
+
+</g>
+
+
+<text x="530"
+      y="65"
+      fill="#70c9bd"
+      font-family="monospace"
+      font-size="10">
+  DAYS
+</text>
+
+
+<text x="374"
+      y="94"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9">
+  ACTIVE → {{CURRENT_STREAK_DATE}}
+</text>
+
+
+<!-- ================================================== -->
+<!-- BOX 3 — LONGEST STREAK -->
+<!-- ================================================== -->
+
+<rect x="700"
+      y="0"
+      width="390"
+      height="110"
+      rx="4"
+      fill="#111417"
+      stroke="#30353a"/>
+
+
+<line x1="700"
+      y1="0"
+      x2="758"
+      y2="0"
+      stroke="#8f8be8"
+      stroke-width="2"/>
+
+
+<text x="724"
+      y="27"
+      fill="#8f8be8"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="2">
+  LONGEST STREAK
+</text>
+
+
+<!-- TROPHY ICON -->
+
+<g transform="translate(724 48)">
+
+  <!-- cup -->
+
+  <path d="
+    M8 4
+    H38
+    V17
+    C38 27 32 33 23 35
+    C14 33 8 27 8 17 Z"
+    fill="none"
+    stroke="#e7b45a"
+    stroke-width="2.5"/>
+
+  <!-- handles -->
+
+  <path d="
+    M8 10
+    H3
+    C1 10 1 14 3 18
+    C4 21 6 22 9 22"
+    fill="none"
+    stroke="#e7b45a"
+    stroke-width="2"/>
+
+  <path d="
+    M38 10
+    H43
+    C45 10 45 14 43 18
+    C42 21 40 22 37 22"
+    fill="none"
+    stroke="#e7b45a"
+    stroke-width="2"/>
+
+  <!-- stem -->
+
+  <line x1="23"
+        y1="35"
+        x2="23"
+        y2="42"
+        stroke="#e7b45a"
+        stroke-width="2"/>
+
+  <line x1="14"
+        y1="44"
+        x2="32"
+        y2="44"
+        stroke="#e7b45a"
+        stroke-width="2.5"/>
+
+</g>
+
+
+<text x="778"
+      y="72"
+      fill="#f1ede4"
+      font-family="Arial, sans-serif"
+      font-size="36"
+      font-weight="700">
+  {{LONGEST_STREAK}}
+</text>
+
+
+<text x="875"
+      y="69"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="10">
+  DAYS
+</text>
+
+
+<text x="724"
+      y="94"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9">
+  {{LONGEST_FROM}} → {{LONGEST_TO}}
+</text>
+
+</g>
+
+
+<!-- ================================================== -->
+<!-- FOOTER -->
+<!-- ================================================== -->
+
+<line x1="55"
+      y1="270"
+      x2="1145"
+      y2="270"
+      stroke="#24282b"/>
+
+
+<circle cx="55"
+        cy="270"
+        r="3"
+        fill="#70c9bd"
+        filter="url(#glow)"/>
+
+
+<text x="68"
+      y="274"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9"
+      letter-spacing="1">
+  GITHUB CONTRIBUTION SIGNAL
+</text>
+
+
+<text x="1145"
+      y="274"
+      text-anchor="end"
+      fill="#77746e"
+      font-family="monospace"
+      font-size="9">
+  AUTO-SYNCED
+</text>
+
+
+</svg>

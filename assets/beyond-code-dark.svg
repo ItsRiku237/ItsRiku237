@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Riku engineering portfolio visualization">
+<defs>
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e7b45a"/>
+    <stop offset="0.52" stop-color="#70c9bd"/>
+    <stop offset="1" stop-color="#8f8be8"/>
+  </linearGradient>
+  <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#e7b45a" stop-opacity=".0"/>
+    <stop offset=".5" stop-color="#70c9bd" stop-opacity=".7"/>
+    <stop offset="1" stop-color="#8f8be8" stop-opacity=".0"/>
+  </linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect width="1200" height="360" fill="#0b0d0f"/>
+<g opacity=".14" stroke="#c9c4b8">
+ <path d="M60 70H1140M60 120H1140M60 170H1140M60 220H1140M60 270H1140"/>
+ <path d="M120 45V310M220 45V310M320 45V310M420 45V310M520 45V310M620 45V310M720 45V310M820 45V310M920 45V310M1020 45V310"/>
+</g>
+<text x="60" y="40" fill="#8f8c85" font-family="monospace" font-size="11" letter-spacing="3">08 — BEYOND CODE</text>
+<text x="60" y="100" fill="#f1ede4" font-family="Georgia,serif" font-size="43">Precision × Composition</text>
+<text x="62" y="135" fill="#85827b" font-family="monospace" font-size="11">ENGINEERING / structure · systems · proportion</text>
+<text x="62" y="157" fill="#85827b" font-family="monospace" font-size="11">ART / gesture · balance · iteration</text>
+<g fill="none">
+ <path d="M650 245 C720 115, 760 285, 835 154 S945 250, 1115 105" stroke="#22282d" stroke-width="18" stroke-linecap="round"/>
+ <path d="M650 245 C720 115, 760 285, 835 154 S945 250, 1115 105" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
+ <path d="M650 245L1115 105" stroke="#e7b45a" stroke-width="1" stroke-dasharray="5 8" opacity=".7"/>
+</g>
+<g fill="#e7b45a"><circle cx="650" cy="245" r="5"/><circle cx="835" cy="154" r="5"/><circle cx="1115" cy="105" r="5"/></g>
+<text x="62" y="226" fill="#f1ede4" font-family="monospace" font-size="13">same eye for structure,</text>
+<text x="62" y="248" fill="#f1ede4" font-family="monospace" font-size="13">whether the canvas is code or paint.</text>
+<text x="62" y="294" fill="#77746e" font-family="monospace" font-size="9" letter-spacing="2">PAINTER · BUILDER · SYSTEM THINKER</text>
+
+</svg>

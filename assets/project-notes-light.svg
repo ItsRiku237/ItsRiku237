@@ -1,0 +1,345 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="760"
+     height="500"
+     viewBox="0 0 760 500">
+
+<rect width="760" height="500" fill="#F4F1EA"/>
+
+<rect x="12" y="12"
+      width="736"
+      height="476"
+      rx="5"
+      fill="#FBFAF7"
+      stroke="#C9C5BD"
+      stroke-width="1.5"/>
+
+<path d="M12 45V12H45"
+      fill="none"
+      stroke="#277A73"
+      stroke-width="2"/>
+
+<path d="M715 12H748V45"
+      fill="none"
+      stroke="#277A73"
+      stroke-width="2"/>
+
+<path d="M12 455V488H45"
+      fill="none"
+      stroke="#D28E24"
+      stroke-width="2"/>
+
+<path d="M715 488H748V455"
+      fill="none"
+      stroke="#D28E24"
+      stroke-width="2"/>
+
+
+<text x="48" y="48"
+      font-family="monospace"
+      font-size="14"
+      font-weight="700"
+      letter-spacing="1"
+      fill="#277A73">
+04 / 🎨 CREATIVE FRONTEND
+</text>
+
+<text x="48" y="91"
+      font-family="Arial"
+      font-size="29"
+      font-weight="700"
+      fill="#24231F">
+🎨 Notes App
+</text>
+
+<text x="48" y="119"
+      font-family="Arial"
+      font-size="14"
+      fill="#6E6A63">
+A notes workspace with a small piece of my art inside it.
+</text>
+
+<text x="48" y="157"
+      font-family="Arial"
+      font-size="14"
+      fill="#3E3B36">
+📌 Pinning · categories · archive · bin · search
+</text>
+
+<text x="48" y="184"
+      font-family="Arial"
+      font-size="14"
+      fill="#3E3B36">
+🌙 Dark mode + localStorage persistence
+</text>
+
+<text x="48" y="211"
+      font-family="Arial"
+      font-size="14"
+      fill="#3E3B36">
+✎ Hand-built HTML5 Canvas drawing tool
+</text>
+
+
+<rect x="48" y="235"
+      width="664"
+      height="125"
+      rx="7"
+      fill="#F3F1EC"
+      stroke="#C8C5BE"
+      stroke-dasharray="4 4"/>
+
+
+<!-- UI -->
+
+<rect x="63" y="251"
+      width="115"
+      height="94"
+      rx="8"
+      fill="#FAF9F5"
+      stroke="#D1CEC7"/>
+
+<text x="120" y="270"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#277A73">
+UI
+</text>
+
+<text x="120" y="300"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="13"
+      fill="#1596A5">
+REACT
+</text>
+
+<text x="120" y="323"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#4B4842">
+React / Vite
+</text>
+
+
+<!-- MANAGEMENT -->
+
+<rect x="210" y="251"
+      width="130"
+      height="94"
+      rx="8"
+      fill="#FAF9F5"
+      stroke="#D1CEC7"/>
+
+<text x="275" y="270"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#277A73">
+MANAGEMENT
+</text>
+
+<text x="275" y="300"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#4B4842">
+Categories
+</text>
+
+<text x="275" y="322"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="10"
+      fill="#6E6A63">
+Archive / Bin
+</text>
+
+
+<!-- STORAGE -->
+
+<rect x="372" y="251"
+      width="130"
+      height="94"
+      rx="8"
+      fill="#FAF9F5"
+      stroke="#D1CEC7"/>
+
+<text x="437" y="270"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#277A73">
+STORAGE
+</text>
+
+<text x="437" y="300"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#4B4842">
+localStorage
+</text>
+
+<text x="437" y="322"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="10"
+      fill="#6E6A63">
+Persistence
+</text>
+
+
+<!-- CANVAS -->
+
+<rect x="534" y="251"
+      width="163"
+      height="94"
+      rx="8"
+      fill="#FAF9F5"
+      stroke="#D1CEC7"/>
+
+<text x="615" y="270"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#277A73">
+CANVAS ENGINE
+</text>
+
+<text x="615" y="300"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      fill="#4B4842">
+HTML5 Canvas
+</text>
+
+<text x="615" y="322"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="10"
+      fill="#6E6A63">
+Drawing Tool
+</text>
+
+
+<!-- ARROWS -->
+
+<text x="194" y="303"
+      text-anchor="middle"
+      font-size="18"
+      fill="#277A73">↔</text>
+
+<text x="356" y="303"
+      text-anchor="middle"
+      font-size="18"
+      fill="#277A73">↔</text>
+
+<text x="518" y="303"
+      text-anchor="middle"
+      font-size="18"
+      fill="#277A73">↔</text>
+
+
+<!-- TECH -->
+
+<rect x="48" y="382"
+      width="78"
+      height="27"
+      rx="5"
+      fill="#E8F2F0"
+      stroke="#277A73"/>
+
+<text x="87" y="400"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+      fill="#277A73">
+REACT
+</text>
+
+
+<rect x="136" y="382"
+      width="66"
+      height="27"
+      rx="5"
+      fill="#E8F2F0"
+      stroke="#277A73"/>
+
+<text x="169" y="400"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+      fill="#277A73">
+VITE
+</text>
+
+
+<rect x="212" y="382"
+      width="108"
+      height="27"
+      rx="5"
+      fill="#E8F2F0"
+      stroke="#277A73"/>
+
+<text x="266" y="400"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+      fill="#277A73">
+JAVASCRIPT
+</text>
+
+
+<rect x="330" y="382"
+      width="66"
+      height="27"
+      rx="5"
+      fill="#E8F2F0"
+      stroke="#277A73"/>
+
+<text x="363" y="400"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+      fill="#277A73">
+CSS3
+</text>
+
+
+<rect x="406" y="382"
+      width="120"
+      height="27"
+      rx="5"
+      fill="#E8F2F0"
+      stroke="#277A73"/>
+
+<text x="466" y="400"
+      text-anchor="middle"
+      font-family="monospace"
+      font-size="11"
+      font-weight="700"
+      fill="#277A73">
+HTML5 CANVAS
+</text>
+
+
+<line x1="48" y1="433"
+      x2="712" y2="433"
+      stroke="#D1CEC7"/>
+
+<text x="48" y="455"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="1"
+      fill="#817C74">
+IDEA → INTERFACE → DRAWING → INTERACTION → PERSISTENCE
+</text>
+
+</svg>

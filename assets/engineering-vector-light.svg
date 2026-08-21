@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Riku engineering portfolio visualization">
+<defs>
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e7b45a"/>
+    <stop offset="0.52" stop-color="#70c9bd"/>
+    <stop offset="1" stop-color="#8f8be8"/>
+  </linearGradient>
+  <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#e7b45a" stop-opacity=".0"/>
+    <stop offset=".5" stop-color="#70c9bd" stop-opacity=".7"/>
+    <stop offset="1" stop-color="#8f8be8" stop-opacity=".0"/>
+  </linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect width="1200" height="360" fill="#f6f4ef"/>
+<g opacity=".12" stroke="#d8d3c8">
+ <path d="M50 70H1150M50 130H1150M50 190H1150M50 250H1150M50 310H1150"/>
+ <path d="M110 45V320M250 45V320M390 45V320M530 45V320M670 45V320M810 45V320M950 45V320M1090 45V320"/>
+</g>
+<text x="58" y="38" fill="#6d6b66" font-family="monospace" font-size="11" letter-spacing="3">02 — ENGINEERING VECTOR</text>
+<text x="58" y="92" fill="#171817" font-family="Georgia,serif" font-size="34">Proven systems → expanding intelligence</text>
+<path d="M80 238 C190 180 250 274 355 214 S520 146 630 204 S820 258 920 168 S1035 116 1115 82" fill="none" stroke="#d7d4cc" stroke-width="10" stroke-linecap="round"/>
+<path d="M80 238 C190 180 250 274 355 214 S520 146 630 204 S820 258 920 168 S1035 116 1115 82" fill="none" stroke="url(#grad)" stroke-width="3" stroke-linecap="round"/>
+<g fill="#f6f4ef" stroke="#e7b45a" stroke-width="2">
+ <circle cx="80" cy="238" r="7"/><circle cx="355" cy="214" r="7"/><circle cx="630" cy="204" r="7"/><circle cx="920" cy="168" r="7"/><circle cx="1115" cy="82" r="7"/>
+</g>
+<g font-family="monospace">
+ <text x="70" y="274" fill="#171817" font-size="12">FULL-STACK</text>
+ <text x="70" y="290" fill="#77746e" font-size="10">PROVEN</text>
+ <text x="325" y="252" fill="#171817" font-size="12">BACKEND</text>
+ <text x="325" y="268" fill="#77746e" font-size="10">SYSTEMS</text>
+ <text x="600" y="242" fill="#171817" font-size="12">REALTIME</text>
+ <text x="600" y="258" fill="#77746e" font-size="10">BUILDING</text>
+ <text x="888" y="206" fill="#171817" font-size="12">DATA</text>
+ <text x="888" y="222" fill="#77746e" font-size="10">EXPANDING</text>
+ <text x="1065" y="56" fill="#171817" font-size="12">AI / ML</text>
+ <text x="1065" y="72" fill="#77746e" font-size="10">EXPLORING</text>
+</g>
+<path d="M80 320H1115" stroke="#d3d0c8"/>
+<g fill="#74726b" font-family="monospace" font-size="9">
+ <text x="80" y="338">FOUNDATION</text><text x="530" y="338">SYSTEM THINKING</text><text x="1040" y="338">NEXT VECTOR</text>
+</g>
+
+</svg>

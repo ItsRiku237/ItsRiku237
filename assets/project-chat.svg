@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="760"
+     height="500"
+     viewBox="0 0 760 500">
+
+  <!-- BACKGROUND -->
+  <rect width="760" height="500" fill="#08090B"/>
+
+  <!-- MAIN CARD -->
+  <rect x="12" y="12"
+        width="736"
+        height="476"
+        rx="5"
+        fill="#17171A"
+        stroke="#3A3A3F"
+        stroke-width="1.5"/>
+
+  <!-- CORNER ACCENTS -->
+  <path d="M12 45V12H45"
+        fill="none"
+        stroke="#E2A13B"
+        stroke-width="2"/>
+
+  <path d="M715 12H748V45"
+        fill="none"
+        stroke="#E2A13B"
+        stroke-width="2"/>
+
+  <path d="M12 455V488H45"
+        fill="none"
+        stroke="#4FA8A0"
+        stroke-width="2"/>
+
+  <path d="M715 488H748V455"
+        fill="none"
+        stroke="#4FA8A0"
+        stroke-width="2"/>
+
+
+  <!-- SECTION LABEL -->
+  <text x="48" y="48"
+        font-family="monospace"
+        font-size="14"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#E2A13B">
+    01 / ★ FLAGSHIP
+  </text>
+
+
+  <!-- TITLE -->
+  <text x="48" y="91"
+        font-family="Arial"
+        font-size="29"
+        font-weight="700"
+        fill="#F2EDE4">
+    💬 Chat Application
+  </text>
+
+
+  <!-- DESCRIPTION -->
+  <text x="48" y="119"
+        font-family="Arial"
+        font-size="14"
+        fill="#A5A09A">
+    Real-time communication, built beyond basic messaging.
+  </text>
+
+
+  <!-- ENGINEERING DETAILS -->
+  <text x="48" y="157"
+        font-family="Arial"
+        font-size="14"
+        fill="#D8D4CD">
+    🔐 JWT authentication at the Socket.io handshake
+  </text>
+
+  <text x="48" y="184"
+        font-family="Arial"
+        font-size="14"
+        fill="#D8D4CD">
+    🟢 Multi-tab online / offline presence
+  </text>
+
+  <text x="48" y="211"
+        font-family="Arial"
+        font-size="14"
+        fill="#D8D4CD">
+    📜 Paginated history + shared REST / socket authorization
+  </text>
+
+
+  <!-- ARCHITECTURE -->
+  <rect x="48" y="235"
+        width="664"
+        height="125"
+        rx="7"
+        fill="#111216"
+        stroke="#34363B"
+        stroke-dasharray="4 4"/>
+
+
+  <!-- CLIENT -->
+  <rect x="63" y="251"
+        width="115"
+        height="94"
+        rx="8"
+        fill="#15161A"
+        stroke="#303237"/>
+
+  <text x="120" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4FA8A0">
+    CLIENT
+  </text>
+
+  <text x="120" y="300"
+        text-anchor="middle"
+        font-size="22"
+        fill="#61DAFB">
+    ⚛
+  </text>
+
+  <text x="120" y="323"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#D8D4CD">
+    React / Vite
+  </text>
+
+
+  <!-- API -->
+  <rect x="210" y="251"
+        width="130"
+        height="94"
+        rx="8"
+        fill="#15161A"
+        stroke="#303237"/>
+
+  <text x="275" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4FA8A0">
+    API LAYER
+  </text>
+
+  <text x="275" y="299"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#D8D4CD">
+    Express.js
+  </text>
+
+  <text x="275" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#A5A09A">
+    REST + Socket.io
+  </text>
+
+
+  <!-- AUTH -->
+  <rect x="372" y="251"
+        width="130"
+        height="94"
+        rx="8"
+        fill="#15161A"
+        stroke="#303237"/>
+
+  <text x="437" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4FA8A0">
+    AUTH &amp; VALIDATION
+  </text>
+
+  <text x="437" y="299"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#D8D4CD">
+    JWT Auth
+  </text>
+
+  <text x="437" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#A5A09A">
+    bcrypt + validation
+  </text>
+
+
+  <!-- DATABASE -->
+  <rect x="534" y="251"
+        width="163"
+        height="94"
+        rx="8"
+        fill="#15161A"
+        stroke="#303237"/>
+
+  <text x="615" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4FA8A0">
+    DATABASE
+  </text>
+
+  <text x="615" y="300"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#D8D4CD">
+    MongoDB Atlas
+  </text>
+
+  <text x="615" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#A5A09A">
+    Mongoose
+  </text>
+
+
+  <!-- ARROWS -->
+  <text x="194" y="303"
+        text-anchor="middle"
+        font-size="18"
+        fill="#4FA8A0">
+    ↔
+  </text>
+
+  <text x="356" y="303"
+        text-anchor="middle"
+        font-size="18"
+        fill="#4FA8A0">
+    ↔
+  </text>
+
+  <text x="518" y="303"
+        text-anchor="middle"
+        font-size="18"
+        fill="#4FA8A0">
+    ↔
+  </text>
+
+
+  <!-- TECH TAGS -->
+
+  <rect x="48" y="382"
+        width="78"
+        height="27"
+        rx="5"
+        fill="#101E1E"
+        stroke="#277A73"/>
+
+  <text x="87" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#58C9C0">
+    REACT
+  </text>
+
+
+  <rect x="136" y="382"
+        width="86"
+        height="27"
+        rx="5"
+        fill="#101E1E"
+        stroke="#277A73"/>
+
+  <text x="179" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#58C9C0">
+    SOCKET.IO
+  </text>
+
+
+  <rect x="232" y="382"
+        width="66"
+        height="27"
+        rx="5"
+        fill="#101E1E"
+        stroke="#277A73"/>
+
+  <text x="265" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#58C9C0">
+    NODE
+  </text>
+
+
+  <rect x="308" y="382"
+        width="78"
+        height="27"
+        rx="5"
+        fill="#101E1E"
+        stroke="#277A73"/>
+
+  <text x="347" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#58C9C0">
+    EXPRESS
+  </text>
+
+
+  <rect x="396" y="382"
+        width="98"
+        height="27"
+        rx="5"
+        fill="#101E1E"
+        stroke="#277A73"/>
+
+  <text x="445" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#58C9C0">
+    MONGODB
+  </text>
+
+
+  <rect x="504" y="382"
+        width="66"
+        height="27"
+        rx="5"
+        fill="#101E1E"
+        stroke="#277A73"/>
+
+  <text x="537" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#58C9C0">
+    JWT
+  </text>
+
+
+  <!-- BOTTOM SYSTEM LINE -->
+  <line x1="48" y1="433"
+        x2="712" y2="433"
+        stroke="#303136"/>
+
+  <text x="48" y="455"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="1"
+        fill="#77736E">
+    MESSAGE → SOCKET → AUTH → DATABASE → REAL-TIME DELIVERY
+  </text>
+
+</svg>
