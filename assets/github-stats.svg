@@ -163,7 +163,7 @@
       font-family="Arial, sans-serif"
       font-size="36"
       font-weight="700">
-  {{TOTAL_CONTRIBUTIONS}}
+  778
 </text>
 
 
@@ -181,7 +181,7 @@
       fill="#77746e"
       font-family="monospace"
       font-size="9">
-  {{TOTAL_FROM}} → {{TODAY}}
+  Oct 04, 2025 → Aug 21, 2026
 </text>
 
 
@@ -290,7 +290,7 @@
         font-family="Arial, sans-serif"
         font-size="24"
         font-weight="700">
-    {{CURRENT_STREAK}}
+    1
   </text>
 
 </g>
@@ -310,7 +310,7 @@
       fill="#77746e"
       font-family="monospace"
       font-size="9">
-  ACTIVE → {{CURRENT_STREAK_DATE}}
+  ACTIVE → Aug 21
 </text>
 
 
@@ -406,7 +406,7 @@
       font-family="Arial, sans-serif"
       font-size="36"
       font-weight="700">
-  {{LONGEST_STREAK}}
+  77
 </text>
 
 
@@ -424,7 +424,7 @@
       fill="#77746e"
       font-family="monospace"
       font-size="9">
-  {{LONGEST_FROM}} → {{LONGEST_TO}}
+  Feb 15 → May 02
 </text>
 
 </g>
