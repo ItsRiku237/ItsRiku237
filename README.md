@@ -32,8 +32,6 @@
 
 
 
----
-
 
 <table width="100%" bgcolor="#08090B">
 <tr>
@@ -198,6 +196,15 @@
 
 
 
+
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-history.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/contribution-history-light.svg">
+  <img src="./assets/contribution-history.svg"
+       width="1200"
+       alt="GitHub contribution activity">
+</picture>
 
 
 

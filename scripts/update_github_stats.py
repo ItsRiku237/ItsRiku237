@@ -168,12 +168,6 @@ def calculate_stats(days):
 
 
 def update_svg(stats):
-
-    svg_path = "assets/github-stats.svg"
-
-    with open(svg_path, "r", encoding="utf-8") as file:
-        svg = file.read()
-
     replacements = {
         "{{TOTAL_CONTRIBUTIONS}}":
             str(stats["total"]),
@@ -200,11 +194,99 @@ def update_svg(stats):
             stats["from_date"]
     }
 
-    for old, new in replacements.items():
-        svg = svg.replace(old, new)
+    # Update BOTH dark and light SVG files
+    svg_paths = [
+        "assets/github-stats.svg",
+        "assets/github-stats-light.svg"
+    ]
+
+    for svg_path in svg_paths:
+
+        with open(svg_path, "r", encoding="utf-8") as file:
+            svg = file.read()
+
+        for old, new in replacements.items():
+            svg = svg.replace(old, new)
+
+        with open(svg_path, "w", encoding="utf-8") as file:
+            file.write(svg)
+
+        print(f"{svg_path} updated successfully.")
+
+
+def update_contribution_graph(days):
+    svg_path = "assets/contribution-history-light.svg"
+
+    with open(svg_path, "r", encoding="utf-8") as file:
+        svg = file.read()
+
+    # Use the latest 31 contribution days
+    recent_days = days[-31:]
+
+    points = []
+    circles = []
+    dates = []
+
+    for index, item in enumerate(recent_days):
+        x = index * 37
+        count = item["count"]
+
+        # Keep the graph scale at 0 / 1 / 2+
+        if count <= 0:
+            y = 140
+        elif count == 1:
+            y = 70
+        else:
+            y = 0
+
+        points.append(f"{x},{y}")
+
+        radius = 5 if count == max(d["count"] for d in recent_days) else 4
+
+        point_fill = "#d99a32" if count == max(
+            d["count"] for d in recent_days
+        ) and count > 0 else "#3b9d92"
+
+        circles.append(
+            f'<circle cx="{x}" cy="{y}" r="{radius}" '
+            f'fill="{point_fill}"/>'
+        )
+
+        dates.append(
+            f'<text x="{x}" y="163">'
+            f'{item["date"].day}</text>'
+        )
+
+    peak = max(
+        (item["count"] for item in recent_days),
+        default=0
+    )
+
+    svg = svg.replace(
+        "{{GRAPH_POINTS}}",
+        " ".join(points)
+    )
+
+    svg = svg.replace(
+        "{{GRAPH_POINTS_CIRCLES}}",
+        "\n    ".join(circles)
+    )
+
+    svg = svg.replace(
+        "{{GRAPH_DATES}}",
+        "\n    ".join(dates)
+    )
+
+    svg = svg.replace(
+        "{{PEAK_CONTRIBUTIONS}}",
+        str(peak)
+    )
 
     with open(svg_path, "w", encoding="utf-8") as file:
         file.write(svg)
+
+    print("contribution-history-light.svg updated successfully.")
+
 
 
 def main():
@@ -227,6 +309,7 @@ def main():
     update_svg(stats)
 
     print("github-stats.svg updated successfully.")
+    update_contribution_graph(days)
 
 
 if __name__ == "__main__":
