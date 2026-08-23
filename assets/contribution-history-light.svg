@@ -159,7 +159,7 @@
 
   <polyline
     id="contribution-line"
-    points="{{GRAPH_POINTS}}"
+    points="0,70 37,70 74,70 111,140 148,140 185,70 222,70 259,70 296,70 333,70 370,70 407,70 444,70 481,140 518,140 555,70 592,70 629,70 666,70 703,70 740,70 777,140 814,70 851,70 888,140 925,0 962,70 999,140 1036,70 1073,0 1110,140"
     fill="none"
     stroke="url(#graphLine)"
     stroke-width="3"
@@ -173,7 +173,37 @@
   <g id="contribution-points"
      fill="#3b9d92">
 
-    {{GRAPH_POINTS_CIRCLES}}
+    <circle cx="0" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="37" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="74" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="111" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="148" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="185" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="222" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="259" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="296" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="333" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="370" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="407" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="444" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="481" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="518" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="555" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="592" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="629" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="666" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="703" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="740" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="777" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="814" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="851" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="888" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="925" cy="0" r="4" fill="#3b9d92"/>
+    <circle cx="962" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="999" cy="140" r="4" fill="#3b9d92"/>
+    <circle cx="1036" cy="70" r="4" fill="#3b9d92"/>
+    <circle cx="1073" cy="0" r="5" fill="#d99a32"/>
+    <circle cx="1110" cy="140" r="4" fill="#3b9d92"/>
 
   </g>
 
@@ -184,7 +214,37 @@
      font-size="9"
      text-anchor="middle">
 
-    {{GRAPH_DATES}}
+    <text x="0" y="163">24</text>
+    <text x="37" y="163">25</text>
+    <text x="74" y="163">26</text>
+    <text x="111" y="163">27</text>
+    <text x="148" y="163">28</text>
+    <text x="185" y="163">29</text>
+    <text x="222" y="163">30</text>
+    <text x="259" y="163">31</text>
+    <text x="296" y="163">1</text>
+    <text x="333" y="163">2</text>
+    <text x="370" y="163">3</text>
+    <text x="407" y="163">4</text>
+    <text x="444" y="163">5</text>
+    <text x="481" y="163">6</text>
+    <text x="518" y="163">7</text>
+    <text x="555" y="163">8</text>
+    <text x="592" y="163">9</text>
+    <text x="629" y="163">10</text>
+    <text x="666" y="163">11</text>
+    <text x="703" y="163">12</text>
+    <text x="740" y="163">13</text>
+    <text x="777" y="163">14</text>
+    <text x="814" y="163">15</text>
+    <text x="851" y="163">16</text>
+    <text x="888" y="163">17</text>
+    <text x="925" y="163">18</text>
+    <text x="962" y="163">19</text>
+    <text x="999" y="163">20</text>
+    <text x="1036" y="163">21</text>
+    <text x="1073" y="163">22</text>
+    <text x="1110" y="163">23</text>
 
   </g>
 
@@ -210,7 +270,7 @@
       fill="#77736c"
       font-family="monospace"
       font-size="9">
-  PEAK → {{PEAK_CONTRIBUTIONS}} CONTRIBUTIONS
+  PEAK → 3 CONTRIBUTIONS
 </text>
 
 </svg>
