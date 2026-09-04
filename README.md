@@ -109,35 +109,6 @@
 <td width="50%" valign="top" bgcolor="#08090B">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-user.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-user-light.svg">
-  <img src="./assets/project-user.svg"
-       width="760"
-       alt="Syntecxhub User Management API">
-</picture>
-
-<p align="center">
-&nbsp;
-<a href="https://github.com/ItsRiku237/Syntecxhub_User_Management_System">
-<img src="https://img.shields.io/badge/%E2%86%97%20VIEW%20REPO-17171a?style=for-the-badge&logo=github&logoColor=f2ede4&labelColor=d99a3f">
-</a>
-&nbsp;
-<a href="https://syntecxhub-user-management-system-3hdq.onrender.com/">
-<img src="https://img.shields.io/badge/%E2%96%B6%20LIVE%20API-17171a?style=for-the-badge&logo=render&logoColor=f2ede4&labelColor=4fa8a0">
-</a>
-
-</p>
-
-</td>
-
-
-<!-- ========================================================= -->
-<!-- PROJECT 04 -->
-<!-- ========================================================= -->
-
-<td width="50%" valign="top" bgcolor="#08090B">
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-notes.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/project-notes-light.svg">
   <img src="./assets/project-notes.svg"
@@ -153,6 +124,36 @@
 &nbsp;
 <a href="https://syntecxhub-notes-app.netlify.app/">
 <img src="https://img.shields.io/badge/%E2%96%B6%20LIVE%20DEMO-17171a?style=for-the-badge&logo=netlify&logoColor=f2ede4&labelColor=4fa8a0">
+</a>
+
+</p>
+
+
+</td>
+
+
+<!-- ========================================================= -->
+<!-- PROJECT 04 -->
+<!-- ========================================================= -->
+
+<td width="50%" valign="top" bgcolor="#08090B">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-user.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/project-user-light.svg">
+  <img src="./assets/project-user.svg"
+       width="760"
+       alt="Syntecxhub User Management API">
+</picture>
+
+<p align="center">
+&nbsp;
+<a href="https://github.com/ItsRiku237/Syntecxhub_User_Management_System">
+<img src="https://img.shields.io/badge/%E2%86%97%20VIEW%20REPO-17171a?style=for-the-badge&logo=github&logoColor=f2ede4&labelColor=d99a3f">
+</a>
+&nbsp;
+<a href="https://syntecxhub-user-management-system-3hdq.onrender.com/">
+<img src="https://img.shields.io/badge/%E2%96%B6%20LIVE%20API-17171a?style=for-the-badge&logo=render&logoColor=f2ede4&labelColor=4fa8a0">
 </a>
 
 </p>
