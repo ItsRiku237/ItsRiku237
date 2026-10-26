@@ -227,9 +227,16 @@ def update_svg(stats):
             svg = svg.replace(old, new)
 
         # Fallback regex in case placeholders were already replaced
+        # BOX 1: NUMBER
         svg = re.sub(
             r'(<!-- BOX 1 — TOTAL CONTRIBUTIONS -->[\s\S]*?<!-- NUMBER -->[\s\S]*?<text[^>]*>\s*)(?:\{\{TOTAL_CONTRIBUTIONS\}\}|\d+)(\s*</text>)',
             r'\g<1>' + str(stats["total"]) + r'\2',
+            svg
+        )
+        # BOX 1: RANGE
+        svg = re.sub(
+            r'(<!-- BOX 1 — TOTAL CONTRIBUTIONS -->[\s\S]*?<!-- RANGE -->[\s\S]*?<text[^>]*>\s*)[^<\n]+?(\s*</text>)',
+            r'\g<1>' + f'{stats["from_date"]} → {stats["today"]}' + r'\2',
             svg
         )
         svg = re.sub(
@@ -237,19 +244,47 @@ def update_svg(stats):
             r'\g<1>' + f'{stats["from_date"]} → {stats["today"]}' + r'\2',
             svg
         )
+
+        # BOX 2: NUMBER
+        svg = re.sub(
+            r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<!-- NUMBER -->[\s\S]*?<text[^>]*>\s*)(?:\{\{CURRENT_STREAK\}\}|\d+)(\s*</text>)',
+            r'\g<1>' + str(stats["current_streak"]) + r'\2',
+            svg
+        )
         svg = re.sub(
             r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<g transform="translate\(485 69\)"[\s\S]*?<text[^>]*>\s*)(?:\{\{CURRENT_STREAK\}\}|\d+)(\s*</text>)',
             r'\g<1>' + str(stats["current_streak"]) + r'\2',
             svg
         )
+
+        # BOX 2: RANGE (Ensure ACTIVE → is never duplicated)
         svg = re.sub(
-            r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<text x="374"\s+y="94"[^>]*>\s*ACTIVE →\s*)[^<\n]+?(\s*</text>)',
+            r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<!-- RANGE -->[\s\S]*?<text[^>]*>\s*)(?:ACTIVE →\s*)*[^<\n]+?(\s*</text>)',
             r'\g<1>' + f'ACTIVE → {stats["current_streak_date"]}' + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<text x="374"\s+y="94"[^>]*>\s*)(?:ACTIVE →\s*)*[^<\n]+?(\s*</text>)',
+            r'\g<1>' + f'ACTIVE → {stats["current_streak_date"]}' + r'\2',
+            svg
+        )
+
+        # BOX 3: NUMBER
+        svg = re.sub(
+            r'(<!-- BOX 3 — LONGEST STREAK -->[\s\S]*?<!-- NUMBER -->[\s\S]*?<text[^>]*>\s*)(?:\{\{LONGEST_STREAK\}\}|\d+)(\s*</text>)',
+            r'\g<1>' + str(stats["longest_streak"]) + r'\2',
             svg
         )
         svg = re.sub(
             r'(<!-- BOX 3 — LONGEST STREAK -->[\s\S]*?<text x="778"\s+y="72"[^>]*>\s*)(?:\{\{LONGEST_STREAK\}\}|\d+)(\s*</text>)',
             r'\g<1>' + str(stats["longest_streak"]) + r'\2',
+            svg
+        )
+
+        # BOX 3: RANGE
+        svg = re.sub(
+            r'(<!-- BOX 3 — LONGEST STREAK -->[\s\S]*?<!-- RANGE -->[\s\S]*?<text[^>]*>\s*)[^<\n]+?(\s*</text>)',
+            r'\g<1>' + f'{stats["longest_from"]} → {stats["longest_to"]}' + r'\2',
             svg
         )
         svg = re.sub(

@@ -33,14 +33,14 @@
 
 
 
-<table width="100%" bgcolor="#08090B">
+<table width="100%">
 <tr>
 
 <!-- ========================================================= -->
 <!-- PROJECT 01 -->
 <!-- ========================================================= -->
 
-<td width="50%" valign="top" bgcolor="#08090B">
+<td width="50%" valign="top">
 
 <h2>03 / SHIPPED SYSTEMS</h2>
 <picture>
@@ -70,7 +70,7 @@
 <!-- PROJECT 02 -->
 <!-- ========================================================= -->
 
-<td width="50%" valign="top" bgcolor="#08090B">
+<td width="50%" valign="top">
 <br>
 <br>
 <br>
@@ -106,7 +106,7 @@
 <!-- PROJECT 03 -->
 <!-- ========================================================= -->
 
-<td width="50%" valign="top" bgcolor="#08090B">
+<td width="50%" valign="top">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-chat.svg">
@@ -135,7 +135,7 @@
 <!-- PROJECT 04 -->
 <!-- ========================================================= -->
 
-<td width="50%" valign="top" bgcolor="#08090B">
+<td width="50%" valign="top">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-task.svg">
@@ -168,7 +168,7 @@
 <!-- PROJECT 05 -->
 <!-- ========================================================= -->
 
-<td width="50%" valign="top" bgcolor="#08090B">
+<td width="50%" valign="top">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-notes.svg">
@@ -198,7 +198,7 @@
 <!-- PROJECT 06 -->
 <!-- ========================================================= -->
 
-<td width="50%" valign="top" bgcolor="#08090B">
+<td width="50%" valign="top">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-user.svg">

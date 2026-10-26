@@ -54,7 +54,7 @@
       font-family="monospace"
       font-size="11"
       letter-spacing="3">
-  07 — GITHUB TELEMETRY
+  05 — GITHUB TELEMETRY
 </text>
 
 <text x="1145"
@@ -95,7 +95,7 @@
 
 
 <!-- ================================================== -->
-<!-- THREE ORIGINAL-STYLE BOXES -->
+<!-- THREE TELEMETRY BOXES -->
 <!-- ================================================== -->
 
 <g transform="translate(55 130)">
@@ -111,78 +111,118 @@
       height="110"
       rx="4"
       fill="#111417"
-      stroke="#30353a"/>
+      stroke="#2a3036"
+      stroke-width="1.2"/>
 
-<!-- top accent -->
-
+<!-- Top accent -->
 <line x1="0"
       y1="0"
-      x2="58"
+      x2="65"
       y2="0"
       stroke="#70c9bd"
       stroke-width="2"/>
 
-
-<text x="24"
-      y="27"
+<!-- Card label -->
+<text x="22"
+      y="26"
       fill="#70c9bd"
       font-family="monospace"
-      font-size="10"
+      font-size="11"
+      font-weight="700"
       letter-spacing="2">
-  CONTRIBUTIONS
+  01 / CONTRIBUTIONS
 </text>
 
+<!-- Verified badge -->
+<rect x="236"
+      y="13"
+      width="72"
+      height="18"
+      rx="2"
+      fill="#141c1b"
+      stroke="#1f3b37"
+      stroke-width="1"/>
+<text x="272"
+      y="25"
+      text-anchor="middle"
+      fill="#70c9bd"
+      font-family="monospace"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1">
+  VERIFIED
+</text>
 
-<!-- GitHub-style contribution icon -->
-
-<g transform="translate(25 47)">
-
+<!-- Contribution checkmark icon -->
+<g transform="translate(22 43)">
   <circle cx="14"
           cy="14"
-          r="13"
+          r="14"
           fill="#101e1e"
           stroke="#277a73"/>
-
-  <path d="M8 14
-           L12 18
-           L20 9"
+  <path d="M8 14 L12 18 L20 9"
         fill="none"
         stroke="#58c9c0"
         stroke-width="2.5"
         stroke-linecap="round"
         stroke-linejoin="round"/>
-
 </g>
 
-
 <!-- NUMBER -->
-
-<text x="62"
+<text x="58"
       y="68"
       fill="#f1ede4"
-      font-family="Arial, sans-serif"
-      font-size="36"
-      font-weight="700">
-  857
+      font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
+      font-size="38"
+      font-weight="800">
+  856
 </text>
 
+<!-- Metric descriptor label -->
+<g transform="translate(160 46)">
+  <text x="0"
+        y="13"
+        fill="#70c9bd"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1.5">
+    TOTAL
+  </text>
+  <text x="0"
+        y="26"
+        fill="#8f8c85"
+        font-family="monospace"
+        font-size="9"
+        letter-spacing="0.8">
+    LIFETIME COMMITS
+  </text>
+</g>
 
-<text x="185"
-      y="67"
-      fill="#77746e"
-      font-family="monospace"
-      font-size="10">
-  TOTAL
-</text>
+<!-- Divider -->
+<line x1="22"
+      y1="84"
+      x2="308"
+      y2="84"
+      stroke="#1f2428"
+      stroke-width="1"/>
 
-
-<text x="25"
-      y="94"
-      fill="#77746e"
-      font-family="monospace"
-      font-size="9">
-  Oct 04, 2025 → Oct 26, 2026
-</text>
+<!-- RANGE -->
+<g transform="translate(22 98)">
+  <circle cx="3"
+          cy="-3.5"
+          r="3"
+          fill="#70c9bd"/>
+  <text x="13"
+        y="0"
+        fill="#b0aca4"
+        font-family="monospace"
+        font-size="10.5"
+        font-weight="600"
+        letter-spacing="0.5">
+    Oct 04, 2025 → Oct 26, 2026
+  </text>
+</g>
 
 
 <!-- ================================================== -->
@@ -195,123 +235,157 @@
       height="110"
       rx="4"
       fill="#111417"
-      stroke="#30353a"/>
+      stroke="#2a3036"
+      stroke-width="1.2"/>
 
-
+<!-- Top accent -->
 <line x1="350"
       y1="0"
-      x2="408"
+      x2="415"
       y2="0"
       stroke="#e7b45a"
       stroke-width="2"/>
 
-
-<text x="374"
-      y="27"
+<!-- Card label -->
+<text x="372"
+      y="26"
       fill="#e7b45a"
       font-family="monospace"
-      font-size="10"
+      font-size="11"
+      font-weight="700"
       letter-spacing="2">
-  CURRENT STREAK
+  02 / CURRENT STREAK
 </text>
 
+<!-- Streak badge -->
+<rect x="586"
+      y="13"
+      width="72"
+      height="18"
+      rx="2"
+      fill="#241e12"
+      stroke="#4a3b1d"
+      stroke-width="1"/>
+<text x="622"
+      y="25"
+      text-anchor="middle"
+      fill="#e7b45a"
+      font-family="monospace"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1">
+  STREAK
+</text>
 
-<!-- ================================================== -->
-<!-- FLAME ICON -->
-<!-- ================================================== -->
-
-<g transform="translate(374 45)">
-
+<!-- Flame icon -->
+<g transform="translate(372 40)">
   <!-- glow -->
-
   <path d="
-    M18 2
-    C11 10 6 15 6 24
-    C6 34 13 41 22 41
-    C31 41 38 34 38 24
-    C38 16 33 10 27 5
-    C28 13 24 17 20 19
-    C21 12 20 7 18 2 Z"
+    M14 2
+    C8 8 4 12 4 19
+    C4 27 10 32 17 32
+    C24 32 30 27 30 19
+    C30 13 26 8 21 4
+    C22 10 19 13 16 15
+    C17 9 16 6 14 2 Z"
     fill="#e7b45a"
-    opacity=".20"
+    opacity=".25"
     filter="url(#glow)"/>
-
-  <!-- flame -->
-
+  <!-- flame body -->
   <path d="
-    M18 2
-    C11 10 6 15 6 24
-    C6 34 13 41 22 41
-    C31 41 38 34 38 24
-    C38 16 33 10 27 5
-    C28 13 24 17 20 19
-    C21 12 20 7 18 2 Z"
+    M14 2
+    C8 8 4 12 4 19
+    C4 27 10 32 17 32
+    C24 32 30 27 30 19
+    C30 13 26 8 21 4
+    C22 10 19 13 16 15
+    C17 9 16 6 14 2 Z"
     fill="#e7b45a"/>
-
   <!-- inner flame -->
-
   <path d="
-    M22 18
-    C18 23 16 26 16 30
-    C16 34 19 36 22 36
-    C26 36 29 33 29 29
-    C29 25 26 22 22 18 Z"
+    M17 14
+    C14 18 12 21 12 24
+    C12 27 14 29 17 29
+    C20 29 22 27 22 24
+    C22 20 20 18 17 14 Z"
     fill="#0b0d0f"/>
-
 </g>
 
-
-<!-- STREAK RING -->
-
-<g transform="translate(485 69)">
-
+<!-- STREAK RING & NUMBER -->
+<g transform="translate(435 58)">
   <circle cx="0"
           cy="0"
-          r="28"
+          r="20"
           fill="none"
-          stroke="#292d30"
-          stroke-width="6"/>
-
+          stroke="#22272b"
+          stroke-width="4.5"/>
   <circle cx="0"
           cy="0"
-          r="28"
+          r="20"
           fill="none"
           stroke="url(#accent)"
-          stroke-width="6"
+          stroke-width="4.5"
           stroke-linecap="round"
-          stroke-dasharray="160 16"
+          stroke-dasharray="100 15"
           transform="rotate(-90)"
           filter="url(#glow)"/>
-
+  <!-- NUMBER -->
   <text x="0"
-        y="9"
+        y="7"
         text-anchor="middle"
         fill="#f1ede4"
-        font-family="Arial, sans-serif"
-        font-size="24"
-        font-weight="700">
+        font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
+        font-size="20"
+        font-weight="800">
     1
   </text>
-
 </g>
 
+<!-- Metric descriptor label -->
+<g transform="translate(472 46)">
+  <text x="0"
+        y="13"
+        fill="#e7b45a"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1.5">
+    DAYS
+  </text>
+  <text x="0"
+        y="26"
+        fill="#8f8c85"
+        font-family="monospace"
+        font-size="9"
+        letter-spacing="0.8">
+    CONTINUOUS STREAK
+  </text>
+</g>
 
-<text x="530"
-      y="65"
-      fill="#70c9bd"
-      font-family="monospace"
-      font-size="10">
-  DAYS
-</text>
+<!-- Divider -->
+<line x1="372"
+      y1="84"
+      x2="658"
+      y2="84"
+      stroke="#1f2428"
+      stroke-width="1"/>
 
-
-<text x="374"
-      y="94"
-      fill="#77746e"
-      font-family="monospace"
-      font-size="9">
-  ACTIVE → ACTIVE → Oct 26
-</text>
+<!-- RANGE -->
+<g transform="translate(372 98)">
+  <circle cx="3"
+          cy="-3.5"
+          r="3"
+          fill="#e7b45a"/>
+  <text x="13"
+        y="0"
+        fill="#b0aca4"
+        font-family="monospace"
+        font-size="10.5"
+        font-weight="600"
+        letter-spacing="0.5">
+    ACTIVE → Oct 26
+  </text>
+</g>
 
 
 <!-- ================================================== -->
@@ -324,108 +398,147 @@
       height="110"
       rx="4"
       fill="#111417"
-      stroke="#30353a"/>
+      stroke="#2a3036"
+      stroke-width="1.2"/>
 
-
+<!-- Top accent -->
 <line x1="700"
       y1="0"
-      x2="758"
+      x2="765"
       y2="0"
       stroke="#8f8be8"
       stroke-width="2"/>
 
-
-<text x="724"
-      y="27"
+<!-- Card label -->
+<text x="722"
+      y="26"
       fill="#8f8be8"
       font-family="monospace"
-      font-size="10"
+      font-size="11"
+      font-weight="700"
       letter-spacing="2">
-  LONGEST STREAK
+  03 / LONGEST STREAK
 </text>
 
+<!-- Record badge -->
+<rect x="990"
+      y="13"
+      width="78"
+      height="18"
+      rx="2"
+      fill="#1d1c2b"
+      stroke="#3b3857"
+      stroke-width="1"/>
+<text x="1029"
+      y="25"
+      text-anchor="middle"
+      fill="#8f8be8"
+      font-family="monospace"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1">
+  RECORD
+</text>
 
-<!-- TROPHY ICON -->
-
-<g transform="translate(724 48)">
-
-  <!-- cup -->
-
+<!-- Trophy icon -->
+<g transform="translate(722 41)">
+  <!-- Cup -->
   <path d="
-    M8 4
-    H38
-    V17
-    C38 27 32 33 23 35
-    C14 33 8 27 8 17 Z"
+    M6 3
+    H32
+    V14
+    C32 22 27 27 19 29
+    C11 27 6 22 6 14 Z"
     fill="none"
     stroke="#e7b45a"
-    stroke-width="2.5"/>
-
-  <!-- handles -->
-
+    stroke-width="2.2"/>
+  <!-- Handles -->
   <path d="
-    M8 10
-    H3
-    C1 10 1 14 3 18
-    C4 21 6 22 9 22"
+    M6 8
+    H2
+    C0.5 8 0.5 11 2 15
+    C3 17 5 18 7 18"
     fill="none"
     stroke="#e7b45a"
-    stroke-width="2"/>
-
+    stroke-width="1.8"/>
   <path d="
-    M38 10
-    H43
-    C45 10 45 14 43 18
-    C42 21 40 22 37 22"
+    M32 8
+    H36
+    C37.5 8 37.5 11 36 15
+    C35 17 33 18 31 18"
     fill="none"
     stroke="#e7b45a"
-    stroke-width="2"/>
-
-  <!-- stem -->
-
-  <line x1="23"
-        y1="35"
-        x2="23"
-        y2="42"
+    stroke-width="1.8"/>
+  <!-- Stem & base -->
+  <line x1="19"
+        y1="29"
+        x2="19"
+        y2="34"
         stroke="#e7b45a"
         stroke-width="2"/>
-
-  <line x1="14"
-        y1="44"
-        x2="32"
-        y2="44"
+  <line x1="11"
+        y1="35"
+        x2="27"
+        y2="35"
         stroke="#e7b45a"
         stroke-width="2.5"/>
-
 </g>
 
-
-<text x="778"
-      y="72"
+<!-- NUMBER -->
+<text x="776"
+      y="68"
       fill="#f1ede4"
-      font-family="Arial, sans-serif"
-      font-size="36"
-      font-weight="700">
+      font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
+      font-size="38"
+      font-weight="800">
   77
 </text>
 
+<!-- Metric descriptor label -->
+<g transform="translate(845 46)">
+  <text x="0"
+        y="13"
+        fill="#8f8be8"
+        font-family="monospace"
+        font-size="12"
+        font-weight="700"
+        letter-spacing="1.5">
+    DAYS
+  </text>
+  <text x="0"
+        y="26"
+        fill="#8f8c85"
+        font-family="monospace"
+        font-size="9"
+        letter-spacing="0.8">
+    ALL-TIME BEST
+  </text>
+</g>
 
-<text x="875"
-      y="69"
-      fill="#77746e"
-      font-family="monospace"
-      font-size="10">
-  DAYS
-</text>
+<!-- Divider -->
+<line x1="722"
+      y1="84"
+      x2="1068"
+      y2="84"
+      stroke="#1f2428"
+      stroke-width="1"/>
 
-
-<text x="724"
-      y="94"
-      fill="#77746e"
-      font-family="monospace"
-      font-size="9">
-  Feb 15 → May 02
-</text>
+<!-- RANGE -->
+<g transform="translate(722 98)">
+  <circle cx="3"
+          cy="-3.5"
+          r="3"
+          fill="#8f8be8"/>
+  <text x="13"
+        y="0"
+        fill="#b0aca4"
+        font-family="monospace"
+        font-size="10.5"
+        font-weight="600"
+        letter-spacing="0.5">
+    Feb 15 → May 02
+  </text>
+</g>
 
 </g>
 
@@ -440,13 +553,11 @@
       y2="270"
       stroke="#24282b"/>
 
-
 <circle cx="55"
         cy="270"
         r="3"
         fill="#70c9bd"
         filter="url(#glow)"/>
-
 
 <text x="68"
       y="274"
@@ -457,15 +568,13 @@
   GITHUB CONTRIBUTION SIGNAL
 </text>
 
-
 <text x="1145"
       y="274"
       text-anchor="end"
       fill="#77746e"
       font-family="monospace"
       font-size="9">
-  AUTO-SYNCED
+  AUTO-SYNCED DAILY
 </text>
-
 
 </svg>
