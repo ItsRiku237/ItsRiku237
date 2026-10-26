@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import urllib.request
 from datetime import date, timedelta
@@ -206,38 +207,74 @@ def update_svg(stats):
             stats["from_date"]
     }
 
-    # Update BOTH dark and light SVG files
-    svg_paths = [
-        "assets/github-stats.svg",
-        "assets/github-stats-light.svg"
+    svg_files = [
+        "github-stats.svg",
+        "github-stats-light.svg"
     ]
 
-    for svg_path in svg_paths:
+    for filename in svg_files:
+        template_path = os.path.join("templates", filename)
+        output_path = os.path.join("assets", filename)
 
-        with open(svg_path, "r", encoding="utf-8") as file:
-            svg = file.read()
+        if os.path.exists(template_path):
+            with open(template_path, "r", encoding="utf-8") as file:
+                svg = file.read()
+        else:
+            with open(output_path, "r", encoding="utf-8") as file:
+                svg = file.read()
 
         for old, new in replacements.items():
             svg = svg.replace(old, new)
 
-        with open(svg_path, "w", encoding="utf-8") as file:
+        # Fallback regex in case placeholders were already replaced
+        svg = re.sub(
+            r'(<!-- BOX 1 — TOTAL CONTRIBUTIONS -->[\s\S]*?<!-- NUMBER -->[\s\S]*?<text[^>]*>\s*)(?:\{\{TOTAL_CONTRIBUTIONS\}\}|\d+)(\s*</text>)',
+            r'\g<1>' + str(stats["total"]) + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- BOX 1 — TOTAL CONTRIBUTIONS -->[\s\S]*?<text x="25"\s+y="94"[^>]*>\s*)[^<\n]+?(\s*</text>)',
+            r'\g<1>' + f'{stats["from_date"]} → {stats["today"]}' + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<g transform="translate\(485 69\)"[\s\S]*?<text[^>]*>\s*)(?:\{\{CURRENT_STREAK\}\}|\d+)(\s*</text>)',
+            r'\g<1>' + str(stats["current_streak"]) + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- BOX 2 — CURRENT STREAK -->[\s\S]*?<text x="374"\s+y="94"[^>]*>\s*ACTIVE →\s*)[^<\n]+?(\s*</text>)',
+            r'\g<1>' + f'ACTIVE → {stats["current_streak_date"]}' + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- BOX 3 — LONGEST STREAK -->[\s\S]*?<text x="778"\s+y="72"[^>]*>\s*)(?:\{\{LONGEST_STREAK\}\}|\d+)(\s*</text>)',
+            r'\g<1>' + str(stats["longest_streak"]) + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- BOX 3 — LONGEST STREAK -->[\s\S]*?<text x="724"\s+y="94"[^>]*>\s*)[^<\n]+?(\s*</text>)',
+            r'\g<1>' + f'{stats["longest_from"]} → {stats["longest_to"]}' + r'\2',
+            svg
+        )
+
+        with open(output_path, "w", encoding="utf-8") as file:
             file.write(svg)
 
-        print(f"{svg_path} updated successfully.")
+        print(f"{output_path} updated successfully.")
 
 
 def update_contribution_graph(days):
-    svg_path = "assets/contribution-history-light.svg"
-
-    with open(svg_path, "r", encoding="utf-8") as file:
-        svg = file.read()
-
     # Use the latest 31 contribution days
     recent_days = days[-31:]
 
     points = []
-    circles = []
     dates = []
+
+    peak = max(
+        (item["count"] for item in recent_days),
+        default=0
+    )
 
     for index, item in enumerate(recent_days):
         x = index * 37
@@ -252,52 +289,101 @@ def update_contribution_graph(days):
             y = 0
 
         points.append(f"{x},{y}")
+        dates.append(f'<text x="{x}" y="163">{item["date"].day}</text>')
 
-        radius = 5 if count == max(d["count"] for d in recent_days) else 4
+    points_str = " ".join(points)
+    dates_str = "\n    ".join(dates)
 
-        point_fill = "#d99a32" if count == max(
-            d["count"] for d in recent_days
-        ) and count > 0 else "#3b9d92"
+    graph_files = [
+        {
+            "filename": "contribution-history.svg",
+            "is_dark": True
+        },
+        {
+            "filename": "contribution-history-light.svg",
+            "is_dark": False
+        }
+    ]
 
-        circles.append(
-            f'<circle cx="{x}" cy="{y}" r="{radius}" '
-            f'fill="{point_fill}"/>'
+    for cfg in graph_files:
+        filename = cfg["filename"]
+        is_dark = cfg["is_dark"]
+        template_path = os.path.join("templates", filename)
+        output_path = os.path.join("assets", filename)
+
+        if os.path.exists(template_path):
+            with open(template_path, "r", encoding="utf-8") as file:
+                svg = file.read()
+        else:
+            with open(output_path, "r", encoding="utf-8") as file:
+                svg = file.read()
+
+        # Build circles for dark / light
+        circles = []
+        for index, item in enumerate(recent_days):
+            x = index * 37
+            count = item["count"]
+            if count <= 0:
+                y = 140
+            elif count == 1:
+                y = 70
+            else:
+                y = 0
+
+            is_peak = (count == peak and count > 0)
+            radius = 5 if is_peak else 4
+
+            if is_dark:
+                if is_peak:
+                    circles.append(
+                        f'<circle cx="{x}" cy="{y}" r="5" '
+                        f'fill="#e7b45a" filter="url(#glow)"/>'
+                    )
+                else:
+                    circles.append(
+                        f'<circle cx="{x}" cy="{y}" r="{radius}" fill="#70c9bd"/>'
+                    )
+            else:
+                point_fill = "#d99a32" if is_peak else "#3b9d92"
+                circles.append(
+                    f'<circle cx="{x}" cy="{y}" r="{radius}" '
+                    f'fill="{point_fill}"/>'
+                )
+
+        circles_str = "\n    ".join(circles)
+
+        # 1. Template placeholder replacements
+        svg = svg.replace("{{GRAPH_POINTS}}", points_str)
+        svg = svg.replace("{{GRAPH_POINTS_CIRCLES}}", circles_str)
+        svg = svg.replace("{{GRAPH_DATES}}", dates_str)
+        svg = svg.replace("{{PEAK_CONTRIBUTIONS}}", str(peak))
+
+        # 2. Regex fallback in case placeholders were already replaced in output_path
+        svg = re.sub(
+            r'(<polyline[\s\S]*?\bpoints=[\'"])[^\'"]*([\'"])',
+            r'\g<1>' + points_str + r'\2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- DATA POINTS -->[\s\S]*?<g[^>]*>)[\s\S]*?(</g>)',
+            r'\g<1>\n    ' + circles_str + r'\n  \2',
+            svg
+        )
+        svg = re.sub(
+            r'(<!-- DATES -->[\s\S]*?<g[^>]*>)[\s\S]*?(</g>)',
+            r'\g<1>\n    ' + dates_str + r'\n  \2',
+            svg
+        )
+        svg = re.sub(
+            r'PEAK → [^\s<]+ CONTRIBUTIONS',
+            f'PEAK → {peak} CONTRIBUTIONS',
+            svg
         )
 
-        dates.append(
-            f'<text x="{x}" y="163">'
-            f'{item["date"].day}</text>'
-        )
+        with open(output_path, "w", encoding="utf-8") as file:
+            file.write(svg)
 
-    peak = max(
-        (item["count"] for item in recent_days),
-        default=0
-    )
-
-    svg = svg.replace(
-        "{{GRAPH_POINTS}}",
-        " ".join(points)
-    )
-
-    svg = svg.replace(
-        "{{GRAPH_POINTS_CIRCLES}}",
-        "\n    ".join(circles)
-    )
-
-    svg = svg.replace(
-        "{{GRAPH_DATES}}",
-        "\n    ".join(dates)
-    )
-
-    svg = svg.replace(
-        "{{PEAK_CONTRIBUTIONS}}",
-        str(peak)
-    )
-
-    with open(svg_path, "w", encoding="utf-8") as file:
-        file.write(svg)
-
-    print("contribution-history-light.svg updated successfully.")
+        print(f"{output_path} updated successfully.")
 
 
 
@@ -315,12 +401,10 @@ def main():
     print("Total contributions:", stats["total"])
     print("Current streak:", stats["current_streak"])
     print("Longest streak:", stats["longest_streak"])
-    print("Longest streak:", stats["longest_from"], "→", stats["longest_to"])
+    print("Longest streak:", stats["longest_from"], "->", stats["longest_to"])
     print()
 
     update_svg(stats)
-
-    print("github-stats.svg updated successfully.")
     update_contribution_graph(days)
 
 

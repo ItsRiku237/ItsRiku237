@@ -10,6 +10,7 @@ on:
     paths:
       - "scripts/update_github_stats.py"
       - "assets/*.svg"
+      - "templates/*.svg"
 
 permissions:
   contents: write
