@@ -52,29 +52,41 @@ def github_graphql(query, variables):
 
 def get_contribution_days():
 
-    variables = {
-        "login": USERNAME,
-        "from": f"{START_DATE.isoformat()}T00:00:00Z",
-        "to": f"{TODAY.isoformat()}T23:59:59Z"
-    }
+    days_map = {}
+    current_start = START_DATE
 
-    result = github_graphql(GRAPHQL, variables)
+    while current_start <= TODAY:
+        current_end = min(current_start + timedelta(days=364), TODAY)
 
-    if "errors" in result:
-        raise RuntimeError(json.dumps(result["errors"], indent=2))
+        variables = {
+            "login": USERNAME,
+            "from": f"{current_start.isoformat()}T00:00:00Z",
+            "to": f"{current_end.isoformat()}T23:59:59Z"
+        }
 
-    calendar = result["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+        result = github_graphql(GRAPHQL, variables)
+
+        if "errors" in result:
+            raise RuntimeError(json.dumps(result["errors"], indent=2))
+
+        calendar = result["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+
+        for week in calendar["weeks"]:
+            for day in week["contributionDays"]:
+                day_date = date.fromisoformat(day["date"])
+                if START_DATE <= day_date <= TODAY:
+                    days_map[day_date] = day["contributionCount"]
+
+        current_start = current_end + timedelta(days=1)
 
     days = []
-
-    for week in calendar["weeks"]:
-        for day in week["contributionDays"]:
-            days.append({
-                "date": date.fromisoformat(day["date"]),
-                "count": day["contributionCount"]
-            })
-
-    days.sort(key=lambda x: x["date"])
+    cursor = START_DATE
+    while cursor <= TODAY:
+        days.append({
+            "date": cursor,
+            "count": days_map.get(cursor, 0)
+        })
+        cursor += timedelta(days=1)
 
     return days
 
