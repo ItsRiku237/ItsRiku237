@@ -157,7 +157,7 @@
       font-family="Arial, sans-serif"
       font-size="36"
       font-weight="700">
-  781
+  856
 </text>
 
 <text x="185"
@@ -173,7 +173,7 @@
       fill="#77736d"
       font-family="monospace"
       font-size="9">
-  Oct 04, 2025 → Aug 23, 2026
+  Oct 04, 2025 → Oct 26, 2026
 </text>
 
 
@@ -277,7 +277,7 @@
         font-family="Arial, sans-serif"
         font-size="24"
         font-weight="700">
-    2
+    1
   </text>
 
 </g>
@@ -296,7 +296,7 @@
       fill="#77736d"
       font-family="monospace"
       font-size="9">
-  ACTIVE → Aug 22
+  ACTIVE → ACTIVE → Oct 26
 </text>
 
 
