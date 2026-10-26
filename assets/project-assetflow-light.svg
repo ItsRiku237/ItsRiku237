@@ -1,0 +1,375 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="760"
+     height="500"
+     viewBox="0 0 760 500">
+
+  <!-- BACKGROUND -->
+  <rect width="760" height="500" fill="#F4F1EA"/>
+
+  <!-- MAIN CARD -->
+  <rect x="12" y="12"
+        width="736"
+        height="476"
+        rx="5"
+        fill="#FBFAF7"
+        stroke="#C9C5BD"
+        stroke-width="1.5"/>
+
+  <!-- CORNER ACCENTS -->
+  <path d="M12 45V12H45"
+        fill="none"
+        stroke="#D28E24"
+        stroke-width="2"/>
+
+  <path d="M715 12H748V45"
+        fill="none"
+        stroke="#D28E24"
+        stroke-width="2"/>
+
+  <path d="M12 455V488H45"
+        fill="none"
+        stroke="#277A73"
+        stroke-width="2"/>
+
+  <path d="M715 488H748V455"
+        fill="none"
+        stroke="#277A73"
+        stroke-width="2"/>
+
+
+  <!-- SECTION LABEL -->
+  <text x="48" y="48"
+        font-family="monospace"
+        font-size="14"
+        font-weight="700"
+        letter-spacing="1"
+        fill="#D28E24">
+    02 / ◇ ENTERPRISE OPS
+  </text>
+
+
+  <!-- TITLE -->
+  <text x="48" y="91"
+        font-family="Arial"
+        font-size="29"
+        font-weight="700"
+        fill="#24231F">
+    📦 AssetFlow
+  </text>
+
+
+  <!-- DESCRIPTION -->
+  <text x="48" y="119"
+        font-family="Arial"
+        font-size="14"
+        fill="#6E6A63">
+    Enterprise IT asset custody, repair tracking &amp; lifecycle audit engine.
+  </text>
+
+
+  <!-- ENGINEERING DETAILS -->
+  <text x="48" y="157"
+        font-family="Arial"
+        font-size="14"
+        fill="#3E3B36">
+    📋 State machine asset lifecycle: assignment, return, repair, retire
+  </text>
+
+  <text x="48" y="184"
+        font-family="Arial"
+        font-size="14"
+        fill="#3E3B36">
+    🔐 Auth.js v5 multi-tier RBAC with server-enforced role gates
+  </text>
+
+  <text x="48" y="211"
+        font-family="Arial"
+        font-size="14"
+        fill="#3E3B36">
+    📜 Append-only immutable audit log + automated custody records
+  </text>
+
+
+  <!-- ARCHITECTURE -->
+  <rect x="48" y="235"
+        width="664"
+        height="125"
+        rx="7"
+        fill="#F3F1EC"
+        stroke="#C8C5BE"
+        stroke-dasharray="4 4"/>
+
+
+  <!-- CLIENT -->
+  <rect x="63" y="251"
+        width="115"
+        height="94"
+        rx="8"
+        fill="#FAF9F5"
+        stroke="#D1CEC7"/>
+
+  <text x="120" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#277A73">
+    CLIENT
+  </text>
+
+  <text x="120" y="300"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4B4842">
+    Next.js 16
+  </text>
+
+  <text x="120" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#6E6A63">
+    React 19 / RSC
+  </text>
+
+
+  <!-- MUTATIONS -->
+  <rect x="210" y="251"
+        width="130"
+        height="94"
+        rx="8"
+        fill="#FAF9F5"
+        stroke="#D1CEC7"/>
+
+  <text x="275" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#277A73">
+    MUTATIONS
+  </text>
+
+  <text x="275" y="299"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4B4842">
+    Server Actions
+  </text>
+
+  <text x="275" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#6E6A63">
+    Zod Validation
+  </text>
+
+
+  <!-- AUTH & RBAC -->
+  <rect x="372" y="251"
+        width="130"
+        height="94"
+        rx="8"
+        fill="#FAF9F5"
+        stroke="#D1CEC7"/>
+
+  <text x="437" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#277A73">
+    AUTH &amp; RBAC
+  </text>
+
+  <text x="437" y="299"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4B4842">
+    Auth.js v5
+  </text>
+
+  <text x="437" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#6E6A63">
+    Multi-Tier Access
+  </text>
+
+
+  <!-- DATABASE -->
+  <rect x="534" y="251"
+        width="163"
+        height="94"
+        rx="8"
+        fill="#FAF9F5"
+        stroke="#D1CEC7"/>
+
+  <text x="615" y="270"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#277A73">
+    DATABASE &amp; ORM
+  </text>
+
+  <text x="615" y="300"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        fill="#4B4842">
+    PostgreSQL
+  </text>
+
+  <text x="615" y="322"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="10"
+        fill="#6E6A63">
+    Prisma 7 / Neon
+  </text>
+
+
+  <!-- ARROWS -->
+  <text x="194" y="303"
+        text-anchor="middle"
+        font-size="18"
+        fill="#277A73">
+    ↔
+  </text>
+
+  <text x="356" y="303"
+        text-anchor="middle"
+        font-size="18"
+        fill="#277A73">
+    ↔
+  </text>
+
+  <text x="518" y="303"
+        text-anchor="middle"
+        font-size="18"
+        fill="#277A73">
+    ↔
+  </text>
+
+
+  <!-- TECH TAGS -->
+
+  <rect x="48" y="382"
+        width="86"
+        height="27"
+        rx="5"
+        fill="#E8F2F0"
+        stroke="#277A73"/>
+
+  <text x="91" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#277A73">
+    NEXT.JS 16
+  </text>
+
+
+  <rect x="144" y="382"
+        width="78"
+        height="27"
+        rx="5"
+        fill="#E8F2F0"
+        stroke="#277A73"/>
+
+  <text x="183" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#277A73">
+    REACT 19
+  </text>
+
+
+  <rect x="232" y="382"
+        width="92"
+        height="27"
+        rx="5"
+        fill="#E8F2F0"
+        stroke="#277A73"/>
+
+  <text x="278" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#277A73">
+    TYPESCRIPT
+  </text>
+
+
+  <rect x="334" y="382"
+        width="76"
+        height="27"
+        rx="5"
+        fill="#E8F2F0"
+        stroke="#277A73"/>
+
+  <text x="372" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#277A73">
+    PRISMA 7
+  </text>
+
+
+  <rect x="420" y="382"
+        width="94"
+        height="27"
+        rx="5"
+        fill="#E8F2F0"
+        stroke="#277A73"/>
+
+  <text x="467" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#277A73">
+    POSTGRESQL
+  </text>
+
+
+  <rect x="524" y="382"
+        width="74"
+        height="27"
+        rx="5"
+        fill="#E8F2F0"
+        stroke="#277A73"/>
+
+  <text x="561" y="400"
+        text-anchor="middle"
+        font-family="monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#277A73">
+    AUTH.JS
+  </text>
+
+
+  <!-- BOTTOM SYSTEM LINE -->
+  <line x1="48" y1="433"
+        x2="712" y2="433"
+        stroke="#D1CEC7"/>
+
+  <text x="48" y="455"
+        font-family="monospace"
+        font-size="10"
+        letter-spacing="1"
+        fill="#817C74">
+    CUSTODY REQUEST → ROLE AUTH → STATE TRANSITION → AUDIT LOG → DB
+  </text>
+
+</svg>

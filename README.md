@@ -44,6 +44,71 @@
 
 <h2>03 / SHIPPED SYSTEMS</h2>
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-disastraaa.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/project-disastraaa-light.svg">
+  <img src="./assets/project-disastraaa.svg"
+       width="760"
+       alt="Disastraaa Disaster Response Platform">
+</picture>
+
+<p align="center">
+&nbsp;
+<a href="https://github.com/jubzNovaX197/Disastraaa_Hackathon">
+<img src="https://img.shields.io/badge/%E2%86%97%20VIEW%20REPO-17171a?style=for-the-badge&logo=github&logoColor=f2ede4&labelColor=d99a3f">
+</a>
+&nbsp;
+<a href="https://disastraaahackathon.vercel.app/">
+<img src="https://img.shields.io/badge/%E2%96%B6%20LIVE%20DEMO-17171a?style=for-the-badge&logo=vercel&logoColor=f2ede4&labelColor=4fa8a0">
+</a>
+
+</p>
+
+</td>
+
+
+<!-- ========================================================= -->
+<!-- PROJECT 02 -->
+<!-- ========================================================= -->
+
+<td width="50%" valign="top" bgcolor="#08090B">
+<br>
+<br>
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-assetflow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/project-assetflow-light.svg">
+  <img src="./assets/project-assetflow.svg"
+       width="760"
+       alt="AssetFlow Enterprise Asset Management">
+</picture>
+
+<p align="center">
+&nbsp;
+<a href="https://github.com/ItsRiku237/AssetFlow">
+<img src="https://img.shields.io/badge/%E2%86%97%20VIEW%20REPO-17171a?style=for-the-badge&logo=github&logoColor=f2ede4&labelColor=d99a3f">
+</a>
+&nbsp;
+<a href="https://assetflow-rust.vercel.app/">
+<img src="https://img.shields.io/badge/%E2%96%B6%20LIVE%20DEMO-17171a?style=for-the-badge&logo=vercel&logoColor=f2ede4&labelColor=4fa8a0">
+</a>
+
+</p>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<!-- ========================================================= -->
+<!-- PROJECT 03 -->
+<!-- ========================================================= -->
+
+<td width="50%" valign="top" bgcolor="#08090B">
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-chat.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/project-chat-light.svg">
   <img src="./assets/project-chat.svg"
@@ -67,13 +132,10 @@
 
 
 <!-- ========================================================= -->
-<!-- PROJECT 02 -->
+<!-- PROJECT 04 -->
 <!-- ========================================================= -->
 
 <td width="50%" valign="top" bgcolor="#08090B">
-<br>
-<br>
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-task.svg">
@@ -103,7 +165,7 @@
 <tr>
 
 <!-- ========================================================= -->
-<!-- PROJECT 03 -->
+<!-- PROJECT 05 -->
 <!-- ========================================================= -->
 
 <td width="50%" valign="top" bgcolor="#08090B">
@@ -133,7 +195,7 @@
 
 
 <!-- ========================================================= -->
-<!-- PROJECT 04 -->
+<!-- PROJECT 06 -->
 <!-- ========================================================= -->
 
 <td width="50%" valign="top" bgcolor="#08090B">
