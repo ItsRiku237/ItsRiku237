@@ -157,7 +157,7 @@
 
   <!-- GRAPH LINE -->
   <polyline
-    points="0,140 37,0 74,0 111,0 148,70 185,70 222,70 259,140 296,140 333,140 370,0 407,140 444,0 481,0 518,0 555,140 592,140 629,140 666,140 703,140 740,140 777,140 814,140 851,140 888,140 925,140 962,140 999,140 1036,140 1073,140 1110,0"
+    points="0,0 37,0 74,0 111,70 148,70 185,70 222,140 259,140 296,140 333,0 370,140 407,0 444,0 481,0 518,140 555,140 592,140 629,140 666,140 703,140 740,140 777,140 814,140 851,140 888,140 925,140 962,140 999,140 1036,140 1073,0 1110,140"
     fill="none"
     stroke="url(#graphLine)"
     stroke-width="3"
@@ -169,21 +169,21 @@
 
   <!-- DATA POINTS -->
   <g fill="#70c9bd">
-    <circle cx="0" cy="140" r="4" fill="#70c9bd"/>
+    <circle cx="0" cy="0" r="4" fill="#70c9bd"/>
     <circle cx="37" cy="0" r="4" fill="#70c9bd"/>
     <circle cx="74" cy="0" r="4" fill="#70c9bd"/>
-    <circle cx="111" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="111" cy="70" r="4" fill="#70c9bd"/>
     <circle cx="148" cy="70" r="4" fill="#70c9bd"/>
     <circle cx="185" cy="70" r="4" fill="#70c9bd"/>
-    <circle cx="222" cy="70" r="4" fill="#70c9bd"/>
+    <circle cx="222" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="259" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="296" cy="140" r="4" fill="#70c9bd"/>
-    <circle cx="333" cy="140" r="4" fill="#70c9bd"/>
-    <circle cx="370" cy="0" r="4" fill="#70c9bd"/>
-    <circle cx="407" cy="140" r="4" fill="#70c9bd"/>
-    <circle cx="444" cy="0" r="4" fill="#70c9bd"/>
-    <circle cx="481" cy="0" r="5" fill="#e7b45a" filter="url(#glow)"/>
-    <circle cx="518" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="333" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="370" cy="140" r="4" fill="#70c9bd"/>
+    <circle cx="407" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="444" cy="0" r="5" fill="#e7b45a" filter="url(#glow)"/>
+    <circle cx="481" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="518" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="555" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="592" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="629" cy="140" r="4" fill="#70c9bd"/>
@@ -198,8 +198,8 @@
     <circle cx="962" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="999" cy="140" r="4" fill="#70c9bd"/>
     <circle cx="1036" cy="140" r="4" fill="#70c9bd"/>
-    <circle cx="1073" cy="140" r="4" fill="#70c9bd"/>
-    <circle cx="1110" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="1073" cy="0" r="4" fill="#70c9bd"/>
+    <circle cx="1110" cy="140" r="4" fill="#70c9bd"/>
   </g>
 
   <!-- DATES -->
@@ -207,37 +207,37 @@
      font-family="monospace"
      font-size="9"
      text-anchor="middle">
-    <text x="0" y="163">26</text>
-    <text x="37" y="163">27</text>
-    <text x="74" y="163">28</text>
-    <text x="111" y="163">29</text>
-    <text x="148" y="163">30</text>
-    <text x="185" y="163">1</text>
-    <text x="222" y="163">2</text>
-    <text x="259" y="163">3</text>
-    <text x="296" y="163">4</text>
-    <text x="333" y="163">5</text>
-    <text x="370" y="163">6</text>
-    <text x="407" y="163">7</text>
-    <text x="444" y="163">8</text>
-    <text x="481" y="163">9</text>
-    <text x="518" y="163">10</text>
-    <text x="555" y="163">11</text>
-    <text x="592" y="163">12</text>
-    <text x="629" y="163">13</text>
-    <text x="666" y="163">14</text>
-    <text x="703" y="163">15</text>
-    <text x="740" y="163">16</text>
-    <text x="777" y="163">17</text>
-    <text x="814" y="163">18</text>
-    <text x="851" y="163">19</text>
-    <text x="888" y="163">20</text>
-    <text x="925" y="163">21</text>
-    <text x="962" y="163">22</text>
-    <text x="999" y="163">23</text>
-    <text x="1036" y="163">24</text>
-    <text x="1073" y="163">25</text>
-    <text x="1110" y="163">26</text>
+    <text x="0" y="163">27</text>
+    <text x="37" y="163">28</text>
+    <text x="74" y="163">29</text>
+    <text x="111" y="163">30</text>
+    <text x="148" y="163">1</text>
+    <text x="185" y="163">2</text>
+    <text x="222" y="163">3</text>
+    <text x="259" y="163">4</text>
+    <text x="296" y="163">5</text>
+    <text x="333" y="163">6</text>
+    <text x="370" y="163">7</text>
+    <text x="407" y="163">8</text>
+    <text x="444" y="163">9</text>
+    <text x="481" y="163">10</text>
+    <text x="518" y="163">11</text>
+    <text x="555" y="163">12</text>
+    <text x="592" y="163">13</text>
+    <text x="629" y="163">14</text>
+    <text x="666" y="163">15</text>
+    <text x="703" y="163">16</text>
+    <text x="740" y="163">17</text>
+    <text x="777" y="163">18</text>
+    <text x="814" y="163">19</text>
+    <text x="851" y="163">20</text>
+    <text x="888" y="163">21</text>
+    <text x="925" y="163">22</text>
+    <text x="962" y="163">23</text>
+    <text x="999" y="163">24</text>
+    <text x="1036" y="163">25</text>
+    <text x="1073" y="163">26</text>
+    <text x="1110" y="163">27</text>
   </g>
 
 </g>
