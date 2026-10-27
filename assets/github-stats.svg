@@ -175,7 +175,7 @@
       font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
       font-size="38"
       font-weight="800">
-  859
+  861
 </text>
 
 <!-- Metric descriptor label -->
@@ -337,7 +337,7 @@
         font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
         font-size="20"
         font-weight="800">
-    1
+    2
   </text>
 </g>
 
@@ -383,7 +383,7 @@
         font-size="10.5"
         font-weight="600"
         letter-spacing="0.5">
-    ACTIVE → Oct 26
+    ACTIVE → Oct 27
   </text>
 </g>
 
