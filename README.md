@@ -2,8 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-dark.svg" alt="Riku — Full-Stack MERN to AI/ML" width="100%">
+  <img src="./assets/hero-light.svg" alt="Riku — Full-Stack MERN to AI/ML" width="100%">
 </picture>
 
 </div>
@@ -45,10 +44,7 @@
 <h2>03 / SHIPPED SYSTEMS</h2>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-disastraaa.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-disastraaa-light.svg">
-  <img src="./assets/project-disastraaa.svg"
-       width="760"
-       alt="Disastraaa Disaster Response Platform">
+  <img src="./assets/project-disastraaa-light.svg" width="760" alt="Disastraaa Disaster Response Platform">
 </picture>
 
 <p align="center">
@@ -77,10 +73,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-assetflow.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-assetflow-light.svg">
-  <img src="./assets/project-assetflow.svg"
-       width="760"
-       alt="AssetFlow Enterprise Asset Management">
+  <img src="./assets/project-assetflow-light.svg" width="760" alt="AssetFlow Enterprise Asset Management">
 </picture>
 
 <p align="center">
@@ -110,10 +103,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-chat.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-chat-light.svg">
-  <img src="./assets/project-chat.svg"
-       width="760"
-       alt="Syntecxhub Chat Application">
+  <img src="./assets/project-chat-light.svg" width="760" alt="Syntecxhub Chat Application">
 </picture>
 
 <p align="center">
@@ -139,10 +129,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-task.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-task-light.svg">
-  <img src="./assets/project-task.svg"
-       width="760"
-       alt="Syntecxhub Task Manager">
+  <img src="./assets/project-task-light.svg" width="760" alt="Syntecxhub Task Manager">
 </picture>
 
 <p align="center">
@@ -172,10 +159,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-notes.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-notes-light.svg">
-  <img src="./assets/project-notes.svg"
-       width="760"
-       alt="Syntecxhub Notes App">
+  <img src="./assets/project-notes-light.svg" width="760" alt="Syntecxhub Notes App">
 </picture>
 
 <p align="center">
@@ -202,10 +186,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/project-user.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/project-user-light.svg">
-  <img src="./assets/project-user.svg"
-       width="760"
-       alt="Syntecxhub User Management API">
+  <img src="./assets/project-user-light.svg" width="760" alt="Syntecxhub User Management API">
 </picture>
 
 <p align="center">
@@ -232,8 +213,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/capability-map-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/capability-map-light.svg">
-  <img src="./assets/capability-map-dark.svg" alt="Riku capability map" width="100%">
+  <img src="./assets/capability-map-light.svg" alt="Riku capability map" width="100%">
 </picture>
 
 </div>
@@ -243,18 +223,8 @@
 
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="./assets/github-stats.svg">
-
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="./assets/github-stats-light.svg">
-
-  <img
-    src="./assets/github-stats.svg"
-    width="1200"
-    alt="GitHub contribution statistics">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats.svg">
+  <img src="./assets/github-stats-light.svg" width="1200" alt="GitHub contribution statistics">
 </picture>
 
 
@@ -263,10 +233,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-history.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/contribution-history-light.svg">
-  <img src="./assets/contribution-history.svg"
-       width="1200"
-       alt="GitHub contribution activity">
+  <img src="./assets/contribution-history-light.svg" width="1200" alt="GitHub contribution activity">
 </picture>
 
 
@@ -276,8 +243,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/engineering-vector-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/engineering-vector-light.svg">
-  <img src="./assets/engineering-vector-dark.svg" alt="Engineering trajectory from full-stack development toward AI and machine learning" width="100%">
+  <img src="./assets/engineering-vector-light.svg" alt="Engineering trajectory from full-stack development toward AI and machine learning" width="100%">
 </picture>
 
 </div>
@@ -294,8 +260,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/beyond-code-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/beyond-code-light.svg">
-  <img src="./assets/beyond-code-dark.svg" alt="Precision and composition — engineering and painting" width="100%">
+  <img src="./assets/beyond-code-light.svg" alt="Precision and composition — engineering and painting" width="100%">
 </picture>
 
 </div>

@@ -1,38 +1,330 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Riku engineering portfolio visualization">
 <defs>
   <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#e7b45a"/>
-    <stop offset="0.52" stop-color="#70c9bd"/>
-    <stop offset="1" stop-color="#8f8be8"/>
+    <stop offset="0" stop-color="#277a73"/>
+    <stop offset="0.5" stop-color="#716bc0"/>
+    <stop offset="1" stop-color="#c58b28"/>
   </linearGradient>
-  <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#e7b45a" stop-opacity=".0"/>
-    <stop offset=".5" stop-color="#70c9bd" stop-opacity=".7"/>
-    <stop offset="1" stop-color="#8f8be8" stop-opacity=".0"/>
+  <linearGradient id="brushstroke" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#277a73"/>
+    <stop offset="0.45" stop-color="#716bc0"/>
+    <stop offset="0.85" stop-color="#c58b28"/>
+    <stop offset="1" stop-color="#f5e1b5"/>
   </linearGradient>
   <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feGaussianBlur stdDeviation="3.5" result="b"/>
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
+
+  <!-- Mask for SVG background grid lines: left text side is normal, inside the right box lines fade out towards the center -->
+  <radialGradient id="boxCenterFadeLight" cx="860" cy="166" r="260" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="35%" stop-color="#ffffff" stop-opacity="0.04"/>
+    <stop offset="70%" stop-color="#ffffff" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+  </radialGradient>
+  <mask id="bgGridMaskLight">
+    <rect x="0" y="0" width="580" height="360" fill="#ffffff"/>
+    <rect x="580" y="0" width="620" height="360" fill="url(#boxCenterFadeLight)"/>
+  </mask>
 </defs>
 
 <rect width="1200" height="360" fill="#f6f4ef"/>
-<g opacity=".14" stroke="#c9c4b8">
- <path d="M60 70H1140M60 120H1140M60 170H1140M60 220H1140M60 270H1140"/>
- <path d="M120 45V310M220 45V310M320 45V310M420 45V310M520 45V310M620 45V310M720 45V310M820 45V310M920 45V310M1020 45V310"/>
+
+<!-- SVG BACKGROUND GRID (Fades towards center when entering the right box) -->
+<g opacity=".14" stroke="#c9c4b8" mask="url(#bgGridMaskLight)">
+  <path d="M60 70H1140M60 120H1140M60 170H1140M60 220H1140M60 270H1140"/>
+  <path d="M120 45V310M220 45V310M320 45V310M420 45V310M520 45V310M620 45V310M720 45V310M820 45V310M920 45V310M1020 45V310"/>
 </g>
+
+<!-- LEFT TEXT CONTENT -->
 <text x="60" y="40" fill="#6d6b66" font-family="monospace" font-size="11" letter-spacing="3">08 — BEYOND CODE</text>
-<text x="60" y="100" fill="#171817" font-family="Georgia,serif" font-size="43">Precision × Composition</text>
-<text x="62" y="135" fill="#77746e" font-family="monospace" font-size="11">ENGINEERING / structure · systems · proportion</text>
-<text x="62" y="157" fill="#77746e" font-family="monospace" font-size="11">ART / gesture · balance · iteration</text>
-<g fill="none">
- <path d="M650 245 C720 115, 760 285, 835 154 S945 250, 1115 105" stroke="#d8d4cc" stroke-width="18" stroke-linecap="round"/>
- <path d="M650 245 C720 115, 760 285, 835 154 S945 250, 1115 105" stroke="url(#grad)" stroke-width="4" stroke-linecap="round"/>
- <path d="M650 245L1115 105" stroke="#e7b45a" stroke-width="1" stroke-dasharray="5 8" opacity=".7"/>
+<text x="60" y="96" fill="#171817" font-family="Georgia, serif" font-size="38" font-weight="700">Precision × Composition</text>
+<text x="62" y="132" fill="#77746e" font-family="monospace" font-size="11">ENGINEERING / structure · systems · proportion</text>
+<text x="62" y="154" fill="#77746e" font-family="monospace" font-size="11">ART / gesture · balance · iteration</text>
+
+<text x="62" y="214" fill="#171817" font-family="monospace" font-size="13">same eye for structure,</text>
+<text x="62" y="236" fill="#171817" font-family="monospace" font-size="13">whether the canvas is code or paint.</text>
+
+<rect x="60" y="272" width="320" height="40" rx="2" fill="#ebe9e3" stroke="#d1cec6"/>
+<circle cx="78" cy="292" r="3.5" fill="#c58b28" filter="url(#glow)"/>
+<text x="90" y="296" fill="#a86e10" font-family="monospace" font-size="10" font-weight="700" letter-spacing="2">PAINTER · BUILDER · SYSTEM THINKER</text>
+
+<!-- ========================================================= -->
+<!-- RIGHT PANEL: DUAL-CRAFT REALISTIC SYNTHESIS               -->
+<!-- ========================================================= -->
+<g transform="translate(580 48)">
+
+  <!-- 1. MINIMAL BOUNDING FRAME (FILL NONE - NO EXTRA BOX LINES) -->
+  <rect x="0" y="0" width="560" height="268" rx="2"
+        fill="none" stroke="#ddd7c9" stroke-width="1.2"/>
+
+  <!-- Corner Ticks -->
+  <path d="M0 10 L0 0 L10 0 M550 0 L560 0 L560 10 M0 258 L0 268 L10 268 M550 268 L560 268 L560 258"
+        fill="none" stroke="#c58b28" stroke-width="1.5"/>
+
+  <!-- Header Strip -->
+  <text x="18" y="23"
+        fill="#5c5953"
+        font-family="monospace"
+        font-size="9.5"
+        font-weight="700"
+        letter-spacing="2">SYNTHESIS // DUAL CRAFT</text>
+
+  <circle cx="542" cy="20" r="3" fill="#c58b28" filter="url(#glow)"/>
+  <text x="532" y="23"
+        text-anchor="end"
+        fill="#a86e10"
+        font-family="monospace"
+        font-size="9"
+        letter-spacing="1">CODE × CANVAS</text>
+
+  <line x1="18" y1="33" x2="542" y2="33" stroke="#dedad0" stroke-width="1"/>
+
+  <!-- ======================================================= -->
+  <!-- CONNECTING HARMONIC BEAM (CONNECTS LAPTOP -> PHI -> ART)-->
+  <!-- ======================================================= -->
+  <!-- Glow Underlay: Laptop to PHI -->
+  <path d="M 146,110 C 182,110 218,88 256,112"
+        fill="none"
+        stroke="#277a73"
+        stroke-width="5"
+        opacity="0.2"
+        filter="url(#glow)"/>
+
+  <!-- Main dynamic gradient beam from laptop screen to PHI -->
+  <path d="M 146,110 C 182,110 218,88 256,112"
+        fill="none"
+        stroke="url(#grad)"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+
+  <!-- Stream Data Node 1 (Logic Stream) -->
+  <circle cx="201" cy="99" r="2.5" fill="#277a73" filter="url(#glow)"/>
+  <text x="201" y="91" text-anchor="middle" fill="#277a73" font-family="monospace" font-size="6" font-weight="700" letter-spacing="1">LOGIC STREAM</text>
+
+  <!-- Glow Underlay: PHI to Canvas -->
+  <path d="M 304,112 C 342,136 382,126 422,126"
+        fill="none"
+        stroke="#c58b28"
+        stroke-width="5"
+        opacity="0.2"
+        filter="url(#glow)"/>
+
+  <!-- Main dynamic gradient beam from PHI to Canvas -->
+  <path d="M 304,112 C 342,136 382,126 422,126"
+        fill="none"
+        stroke="url(#grad)"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+
+  <!-- Stream Data Node 2 (Harmonic Ratio) -->
+  <circle cx="363" cy="123" r="2.5" fill="#c58b28" filter="url(#glow)"/>
+  <text x="363" y="115" text-anchor="middle" fill="#a86e10" font-family="monospace" font-size="6" font-weight="700" letter-spacing="1">HARMONIC RATIO</text>
+
+  <!-- ======================================================= -->
+  <!-- PILLAR 1: LAPTOP WITH TERMINAL (CODE & SYSTEMS)         -->
+  <!-- ======================================================= -->
+  <g transform="translate(98 118)">
+    <!-- Laptop Display Lid (Silver Aluminum Chassis) -->
+    <rect x="-48" y="-44" width="96" height="58" rx="3.5"
+          fill="#eae7e1" stroke="#cfcac0" stroke-width="1.2"/>
+    <!-- Webcam dot & indicator -->
+    <circle cx="0" cy="-40" r="1.2" fill="#aba69d"/>
+    <circle cx="4" cy="-40" r="0.6" fill="#277a73"/>
+
+    <!-- Terminal Screen Glass (Dark IDE Panel) -->
+    <rect x="-43" y="-36" width="86" height="46" rx="2"
+          fill="#1b1e23" stroke="#2a3038" stroke-width="0.8"/>
+
+    <!-- Terminal Window Titlebar Controls -->
+    <circle cx="-37" cy="-30" r="1.6" fill="#e7745a"/>
+    <circle cx="-32" cy="-30" r="1.6" fill="#e7b45a"/>
+    <circle cx="-27" cy="-30" r="1.6" fill="#70c9bd"/>
+    <!-- Shell Tab Title -->
+    <text x="-19" y="-28.5" fill="#8f98a3" font-family="monospace" font-size="5.5" font-weight="600">zsh ~ clean-arch</text>
+    <line x1="-43" y1="-24" x2="43" y2="-24" stroke="#272d36" stroke-width="0.8"/>
+
+    <!-- Terminal Code Lines -->
+    <text x="-39" y="-16" fill="#70c9bd" font-family="monospace" font-size="5.8" font-weight="700">❯ sys.arch('clean')</text>
+    <text x="-39" y="-8" fill="#8f8be8" font-family="monospace" font-size="5.8">→ logic.verify(auth)</text>
+    <text x="-39" y="0" fill="#e7b45a" font-family="monospace" font-size="5.8">✔ api.serve(200 OK)</text>
+    <!-- Line 4: Prompt with Blinking Cursor -->
+    <text x="-39" y="8" fill="#70c9bd" font-family="monospace" font-size="5.8" font-weight="700">❯</text>
+    <rect x="-33" y="3.5" width="2.8" height="5.5" fill="#70c9bd" filter="url(#glow)"/>
+
+    <!-- Screen Hinge -->
+    <rect x="-16" y="14" width="32" height="3" rx="1" fill="#bbb6ab"/>
+
+    <!-- Laptop Base Deck -->
+    <polygon points="-52,16 52,16 62,30 -62,30"
+             fill="#dedad2" stroke="#cfcac0" stroke-width="1.2"/>
+    <!-- Keyboard Inset -->
+    <polygon points="-42,18 42,18 48,24 -48,24"
+             fill="#22262d" stroke="#181c22" stroke-width="0.6"/>
+    <!-- Key Rows Grid Lines -->
+    <line x1="-38" y1="20" x2="38" y2="20" stroke="#333842" stroke-width="0.8"/>
+    <line x1="-43" y1="22" x2="43" y2="22" stroke="#333842" stroke-width="0.8"/>
+    <!-- Trackpad -->
+    <rect x="-12" y="25" width="24" height="3.5" rx="0.8"
+          fill="#eae7e1" stroke="#bcb7ad" stroke-width="0.5"/>
+    <!-- Front opener notch -->
+    <rect x="-8" y="29" width="16" height="1" rx="0.5" fill="#cfcac0"/>
+
+    <!-- Data Stream Pulse from Screen Right Edge -->
+    <circle cx="48" cy="-8" r="2.5" fill="#277a73" filter="url(#glow)"/>
+
+    <!-- Pillar 1 Labels -->
+    <text x="0" y="65"
+          text-anchor="middle"
+          fill="#277a73"
+          font-family="monospace"
+          font-size="11"
+          font-weight="700"
+          letter-spacing="1">CODE &amp; SYSTEMS</text>
+    <text x="0" y="80"
+          text-anchor="middle"
+          fill="#6e6c67"
+          font-family="monospace"
+          font-size="8.5">CLEAN ARCH · LOGIC · APIS</text>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- PILLAR 2: THE GOLDEN RATIO φ (PRECISION VIEWFINDER)     -->
+  <!-- ======================================================= -->
+  <g transform="translate(280 118)">
+    <!-- Outer Concentric Precision Calibration Ring -->
+    <circle cx="0" cy="-6" r="28" fill="none" stroke="#716bc0" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.6"/>
+
+    <!-- Viewfinder Lens Ring (Harmonic Connector Hub) -->
+    <circle cx="0" cy="-6" r="24" fill="#edeae3" stroke="#716bc0" stroke-width="1.8"/>
+
+    <!-- Viewfinder Crosshairs -->
+    <line x1="0" y1="-34" x2="0" y2="-26" stroke="#716bc0" stroke-width="1.5"/>
+    <line x1="0" y1="14" x2="0" y2="22" stroke="#716bc0" stroke-width="1.5"/>
+    <line x1="-34" y1="-6" x2="-26" y2="-6" stroke="#716bc0" stroke-width="1.5"/>
+    <line x1="26" y1="-6" x2="34" y2="-6" stroke="#716bc0" stroke-width="1.5"/>
+
+    <!-- Fine 45-degree Precision Corner Ticks -->
+    <line x1="-18" y1="-24" x2="-15" y2="-21" stroke="#716bc0" stroke-width="0.9" opacity="0.7"/>
+    <line x1="18" y1="-24" x2="15" y2="-21" stroke="#716bc0" stroke-width="0.9" opacity="0.7"/>
+    <line x1="-18" y1="12" x2="-15" y2="9" stroke="#716bc0" stroke-width="0.9" opacity="0.7"/>
+    <line x1="18" y1="12" x2="15" y2="9" stroke="#716bc0" stroke-width="0.9" opacity="0.7"/>
+
+    <!-- Prominent Greek PHI (φ) Monogram -->
+    <text x="0" y="4"
+          text-anchor="middle"
+          fill="#171817"
+          font-family="'Times New Roman', Georgia, serif"
+          font-size="28"
+          font-weight="700"
+          font-style="italic">φ</text>
+
+    <!-- Mathematical Ratio Badge -->
+    <rect x="-48" y="24" width="96" height="18" rx="2" fill="#efedfa" stroke="#cfcbe8" stroke-width="1"/>
+    <text x="0" y="36"
+          text-anchor="middle"
+          fill="#5852a8"
+          font-family="monospace"
+          font-size="9"
+          font-weight="700"
+          letter-spacing="1">GOLDEN φ = 1.618</text>
+
+    <!-- Pillar 2 Labels -->
+    <text x="0" y="65"
+          text-anchor="middle"
+          fill="#171817"
+          font-family="monospace"
+          font-size="11"
+          font-weight="700"
+          letter-spacing="1">SHARED INSTINCT</text>
+    <text x="0" y="80"
+          text-anchor="middle"
+          fill="#5852a8"
+          font-family="monospace"
+          font-size="8.5">PROPORTION × COMPOSITION</text>
+  </g>
+
+  <!-- ======================================================= -->
+  <!-- PILLAR 3: CANVAS & PAINT (CANVAS, STROKE, PALETTE, BRUSH)-->
+  <!-- ======================================================= -->
+  <g transform="translate(465 118)">
+    <!-- Stretched Canvas Board -->
+    <rect x="-46" y="-40" width="92" height="70" rx="2" fill="#edeae3" stroke="#c5b69c" stroke-width="1.4"/>
+    <rect x="-42" y="-36" width="84" height="62" rx="1" fill="#f7f5f0" stroke="#ddd7c9" stroke-width="1"/>
+
+    <!-- Rich Layered Painterly Impasto Brushstroke -->
+    <path d="M -36,18 C -20,26 -4,-2 10,-14 C 22,-22 30,-16 36,-22"
+          fill="none"
+          stroke="url(#brushstroke)"
+          stroke-width="8"
+          stroke-linecap="round"/>
+    <path d="M -34,16 C -18,24 -2,-4 12,-16 C 24,-24 28,-18 34,-24"
+          fill="none"
+          stroke="#fffcf5"
+          stroke-width="2"
+          stroke-linecap="round"
+          opacity="0.8"/>
+
+    <!-- Artist's Paintbrush laying down the paint -->
+    <!-- Wooden Handle -->
+    <line x1="36" y1="-22" x2="62" y2="-48" stroke="#9e6932" stroke-width="3" stroke-linecap="round"/>
+    <!-- Silver Ferrule -->
+    <line x1="36" y1="-22" x2="44" y2="-30" stroke="#aba69d" stroke-width="4" stroke-linecap="round"/>
+    <!-- Brush Tip -->
+    <polygon points="34,-20 38,-24 30,-26" fill="#c58b28"/>
+
+    <!-- Wet Oil Pigment Dollops -->
+    <!-- Amber / Gold -->
+    <g transform="translate(-28 17)">
+      <circle cx="0" cy="0" r="4.5" fill="#c58b28" filter="url(#glow)"/>
+      <circle cx="-1.5" cy="-1.5" r="1.5" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Vermilion / Red -->
+    <g transform="translate(-12 19)">
+      <circle cx="0" cy="0" r="4" fill="#c55338"/>
+      <circle cx="-1.2" cy="-1.2" r="1.2" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Phthalo Teal -->
+    <g transform="translate(4 19)">
+      <circle cx="0" cy="0" r="4" fill="#277a73"/>
+      <circle cx="-1.2" cy="-1.2" r="1.2" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Ultramarine Violet -->
+    <g transform="translate(20 17)">
+      <circle cx="0" cy="0" r="4" fill="#716bc0"/>
+      <circle cx="-1.2" cy="-1.2" r="1.2" fill="#ffffff" opacity="0.8"/>
+    </g>
+
+    <!-- Pillar 3 Labels -->
+    <text x="0" y="65"
+          text-anchor="middle"
+          fill="#a86e10"
+          font-family="monospace"
+          font-size="11"
+          font-weight="700"
+          letter-spacing="1">CANVAS &amp; PAINT</text>
+    <text x="0" y="80"
+          text-anchor="middle"
+          fill="#6e6c67"
+          font-family="monospace"
+          font-size="8.5">GESTURE · COLOR · TEXTURE</text>
+  </g>
+
+  <!-- 3. FOOTER AXIOM STRIP -->
+  <line x1="18" y1="244" x2="542" y2="244" stroke="#dedad0" stroke-width="1"/>
+  <text x="18" y="256"
+        fill="#7a766e"
+        font-family="monospace"
+        font-size="8"
+        letter-spacing="0.5">AXIOM: ARCHITECTURE IS VISUAL · ART IS ARCHITECTURAL</text>
+  <text x="542" y="256"
+        text-anchor="end"
+        fill="#a86e10"
+        font-family="monospace"
+        font-size="8"
+        letter-spacing="0.5">DISCIPLINE + EXPRESSION</text>
+
 </g>
-<g fill="#e7b45a"><circle cx="650" cy="245" r="5"/><circle cx="835" cy="154" r="5"/><circle cx="1115" cy="105" r="5"/></g>
-<text x="62" y="226" fill="#171817" font-family="monospace" font-size="13">same eye for structure,</text>
-<text x="62" y="248" fill="#171817" font-family="monospace" font-size="13">whether the canvas is code or paint.</text>
-<text x="62" y="294" fill="#77746e" font-family="monospace" font-size="9" letter-spacing="2">PAINTER · BUILDER · SYSTEM THINKER</text>
 
 </svg>
