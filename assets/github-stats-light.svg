@@ -175,7 +175,7 @@
       font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
       font-size="38"
       font-weight="800">
-  945
+  946
 </text>
 
 <!-- Metric descriptor label -->
@@ -263,18 +263,18 @@
       width="72"
       height="18"
       rx="2"
-      fill="#e5e2da"
-      stroke="#cfcac0"
+      fill="#faebd0"
+      stroke="#e0cfa8"
       stroke-width="1"/>
 <text x="622"
       y="25"
       text-anchor="middle"
-      fill="#77736c"
+      fill="#a86e10"
       font-family="monospace"
       font-size="9"
       font-weight="700"
       letter-spacing="1">
-  REST
+  STREAK
 </text>
 
 <!-- Flame icon -->
@@ -289,7 +289,7 @@
     C22 10 19 13 16 15
     C17 9 16 6 14 2 Z"
     fill="#c58b28"
-    opacity="0"
+    opacity=".25"
     filter="url(#glow)"/>
   <!-- flame body -->
   <path d="
@@ -300,7 +300,7 @@
     C30 13 26 8 21 4
     C22 10 19 13 16 15
     C17 9 16 6 14 2 Z"
-    fill="#c58b28" opacity=".3"/>
+    fill="#c58b28"/>
   <!-- inner flame -->
   <path d="
     M17 14
@@ -326,7 +326,7 @@
           stroke="url(#accent)"
           stroke-width="4.5"
           stroke-linecap="round"
-          stroke-dasharray="0 130"
+          stroke-dasharray="100 15"
           transform="rotate(-90)"
           filter="url(#glow)"/>
   <!-- NUMBER -->
@@ -337,7 +337,7 @@
         font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
         font-size="20"
         font-weight="800">
-    0
+    1
   </text>
 </g>
 
@@ -375,7 +375,7 @@
   <circle cx="3"
           cy="-3.5"
           r="3"
-          fill="#9b978f"/>
+          fill="#a86e10"/>
   <text x="13"
         y="0"
         fill="#3e3c38"
@@ -383,7 +383,7 @@
         font-size="10.5"
         font-weight="600"
         letter-spacing="0.5">
-    LAST ACTIVE → Nov 09
+    ACTIVE → Nov 11
   </text>
 </g>
 
