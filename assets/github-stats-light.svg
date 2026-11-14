@@ -175,7 +175,7 @@
       font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
       font-size="38"
       font-weight="800">
-  956
+  983
 </text>
 
 <!-- Metric descriptor label -->
@@ -220,7 +220,7 @@
         font-size="10.5"
         font-weight="600"
         letter-spacing="0.5">
-    Oct 04, 2025 → Nov 13, 2026
+    Oct 04, 2025 → Nov 14, 2026
   </text>
 </g>
 
@@ -337,7 +337,7 @@
         font-family="'JetBrains Mono', 'Segoe UI', Arial, sans-serif"
         font-size="20"
         font-weight="800">
-    3
+    4
   </text>
 </g>
 
@@ -383,7 +383,7 @@
         font-size="10.5"
         font-weight="600"
         letter-spacing="0.5">
-    Nov 11 → Nov 13
+    Nov 11 → Nov 14
   </text>
 </g>
 
